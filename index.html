@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Other Eyes: an atlas of creatures</title>
+  <meta name="description" content="See the world the way other animals do, and find out where they live.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#top">Other Eyes</a>
+  <nav aria-label="Sections">
+    <a href="#vision">How they see</a>
+    <a href="#map">Where they live</a>
+    <a href="#facts">Fun facts</a>
+    <a href="#sources">Sources</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO = the live vision demo -->
+  <section class="hero" id="vision" aria-labelledby="hero-title">
+    <div class="hero-text">
+      <h1 id="hero-title">The same meadow, through other eyes</h1>
+      <p>Pick an animal, then drag the slider. The left side is what a human sees.
+         The right side is an approximation of the animal's view.</p>
+    </div>
+
+    <div class="stage">
+      <div class="compare" id="compare">
+        <canvas id="canvas-original" aria-hidden="true"></canvas>
+        <canvas id="canvas-result" role="img" aria-label="The scene as the selected animal might see it"></canvas>
+        <div class="handle" id="handle" aria-hidden="true"><span></span></div>
+        <span class="tag tag-left">Human</span>
+        <span class="tag tag-right" id="tag-right">Human</span>
+        <input type="range" id="slider" min="0" max="100" value="50" aria-label="Compare human view and animal view">
+      </div>
+
+      <div class="controls">
+        <div class="picker" id="mode-picker" role="radiogroup" aria-label="Choose an animal"></div>
+        <label class="upload">
+          <input type="file" id="file-input" accept="image/*">
+          <span>Try your own photo</span>
+        </label>
+      </div>
+
+      <div class="notes" id="notes" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="section" id="map" aria-labelledby="map-title">
+    <div class="section-head">
+      <h2 id="map-title">Where they live</h2>
+      <p>Choose a species to see its range, or show them all at once.</p>
+    </div>
+    <div class="chips" id="map-chips" role="group" aria-label="Choose species to show on the map"></div>
+    <div id="map-canvas" class="map-canvas"></div>
+    <p class="caption" id="map-caption">
+      Ranges on this map are rough placeholder shapes, not scientific data.
+    </p>
+  </section>
+
+  <!-- FACTS -->
+  <section class="section" id="facts" aria-labelledby="facts-title">
+    <div class="section-head">
+      <h2 id="facts-title">Fun facts</h2>
+    </div>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <!-- SOURCES -->
+  <section class="section sources" id="sources" aria-labelledby="sources-title">
+    <div class="section-head">
+      <h2 id="sources-title">Sources and honesty notes</h2>
+    </div>
+    <div class="sources-body">
+      <p>The animal-vision images are made live in your browser from simple image
+         effects. They are illustrations, not photographs of what an animal
+         experiences. Ultraviolet and infrared cannot be seen by humans, so those
+         views use false colour.</p>
+      <p>Replace this list with your real references. Examples of what to cite:</p>
+      <ul>
+        <li>Range maps: IUCN Red List spatial data (iucnredlist.org)</li>
+        <li>Conservation status: IUCN Red List</li>
+        <li>Fun facts: the articles, books or papers you used for each species</li>
+        <li>Vision research: the papers behind each animal's colour and acuity values</li>
+        <li>Map tiles: &copy; OpenStreetMap contributors, &copy; CARTO</li>
+        <li>Sample image: drawn for this project. Replace it with a photo you have rights to use.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>A semester project. Built with Leaflet and the browser's Canvas.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

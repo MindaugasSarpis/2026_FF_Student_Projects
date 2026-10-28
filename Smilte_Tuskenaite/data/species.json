@@ -1,0 +1,129 @@
+{
+  "_readme": "Add a species by copying one entry. 'vision' links to a mode in script.js (dog, bee, eagle, fly, snake) or leave it as null. IMPORTANT: the 'range' shapes below are rough hand-drawn placeholders. Replace them with real range polygons (IUCN Red List, simplified in mapshaper.org). GeoJSON uses [longitude, latitude] order. Verify every fact and cite it on the sources section before submitting.",
+  "species": [
+    {
+      "id": "gray-wolf",
+      "name": "Gray wolf",
+      "latin": "Canis lupus",
+      "group": "Mammal",
+      "status": "Least Concern",
+      "size": "About 16-60 kg, varies by region",
+      "diet": "Carnivore (mostly hoofed mammals)",
+      "color": "#2547D0",
+      "vision": "dog",
+      "visionNote": "Dogs descend from wolf-like ancestors and share the same two-cone colour vision, so the dog view is a good stand-in.",
+      "facts": [
+        "A pack is usually a family: a breeding pair and their offspring.",
+        "Dogs are descended from an ancient population of wolves.",
+        "Wolves can cover very long distances in a day while hunting or dispersing."
+      ],
+      "range": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[[-168,66],[-140,70],[-95,72],[-60,60],[-55,50],[-70,45],[-90,47],[-110,40],[-120,48],[-135,58],[-165,60],[-168,66]]],
+          [[[-10,42],[10,46],[30,55],[60,70],[100,76],[140,70],[170,66],[140,45],[120,40],[90,30],[70,35],[50,38],[30,38],[10,40],[-10,42]]]
+        ]
+      }
+    },
+    {
+      "id": "honey-bee",
+      "name": "Western honey bee",
+      "latin": "Apis mellifera",
+      "group": "Insect",
+      "status": "Not globally assessed (verify on IUCN)",
+      "size": "About 1.2-1.5 cm",
+      "diet": "Nectar and pollen",
+      "color": "#B8860B",
+      "vision": "bee",
+      "visionNote": "Bees see ultraviolet, blue and green, but not red.",
+      "facts": [
+        "Foragers do a 'waggle dance' that tells nestmates the direction and distance of food.",
+        "Many flowers have ultraviolet patterns that guide bees to the nectar.",
+        "A summer colony can hold tens of thousands of workers."
+      ],
+      "rangeNote": "Native to Europe, Africa and western Asia. The shape shows the native range only. People have introduced it almost everywhere.",
+      "range": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[[-10,36],[30,36],[45,42],[50,55],[40,62],[10,60],[-8,52],[-10,36]]],
+          [[[-17,21],[-6,36],[32,31],[43,12],[51,11],[40,-15],[32,-28],[20,-35],[12,-17],[9,4],[-8,4],[-17,14],[-17,21]]],
+          [[[30,36],[50,42],[60,36],[56,24],[36,30],[30,36]]]
+        ]
+      }
+    },
+    {
+      "id": "bald-eagle",
+      "name": "Bald eagle",
+      "latin": "Haliaeetus leucocephalus",
+      "group": "Bird",
+      "status": "Least Concern",
+      "size": "Wingspan roughly 1.8-2.3 m",
+      "diet": "Fish, waterbirds, carrion",
+      "color": "#7A4B1E",
+      "vision": "eagle",
+      "visionNote": "Eagles have far sharper eyesight than humans, so the effect is shown as extra sharpness.",
+      "facts": [
+        "Its numbers crashed in the mid-1900s, partly due to the pesticide DDT, then recovered after it was banned.",
+        "Raptor eyes have a very dense layer of light sensors and can resolve fine detail from far away.",
+        "Pairs build some of the largest nests of any North American bird."
+      ],
+      "range": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[[-165,65],[-130,62],[-95,60],[-62,52],[-65,44],[-80,25],[-98,26],[-117,32],[-125,48],[-140,58],[-165,58],[-165,65]]]
+        ]
+      }
+    },
+    {
+      "id": "housefly",
+      "name": "Housefly",
+      "latin": "Musca domestica",
+      "group": "Insect",
+      "status": "Not assessed (verify on IUCN)",
+      "size": "About 6-7 mm",
+      "diet": "Liquid or softened food",
+      "color": "#5E7D2B",
+      "vision": "fly",
+      "visionNote": "A compound eye is made of thousands of tiny lenses. Flies also process motion much faster than we do.",
+      "facts": [
+        "Each compound eye is built from thousands of tiny units called ommatidia.",
+        "Flies can perceive flicker and fast motion at rates well beyond human limits, which is why they dodge swatters.",
+        "They live alongside humans on nearly every continent."
+      ],
+      "rangeNote": "Found almost worldwide with people. The shapes are very rough continents.",
+      "range": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[[-168,66],[-95,72],[-60,60],[-55,47],[-80,25],[-97,18],[-118,30],[-125,48],[-168,60],[-168,66]]],
+          [[[-80,10],[-60,10],[-35,-6],[-40,-22],[-58,-38],[-70,-55],[-75,-40],[-72,-18],[-80,-3],[-80,10]]],
+          [[[-10,36],[-8,55],[30,70],[100,76],[170,66],[140,45],[122,22],[105,8],[78,8],[56,24],[36,30],[-10,36]]],
+          [[[-17,21],[-6,36],[32,31],[43,12],[51,11],[40,-15],[32,-28],[20,-35],[12,-17],[9,4],[-8,4],[-17,14],[-17,21]]],
+          [[[114,-22],[130,-12],[142,-11],[153,-26],[147,-38],[130,-32],[115,-34],[114,-22]]]
+        ]
+      }
+    },
+    {
+      "id": "western-diamondback",
+      "name": "Western diamondback rattlesnake",
+      "latin": "Crotalus atrox",
+      "group": "Reptile",
+      "status": "Least Concern",
+      "size": "Commonly about 1-1.5 m",
+      "diet": "Small mammals, birds, lizards",
+      "color": "#B3402A",
+      "vision": "snake",
+      "visionNote": "Pit vipers sense heat through pit organs between the eye and nostril and combine it with normal vision.",
+      "facts": [
+        "Pit organs detect infrared heat, so the snake can sense warm prey in the dark.",
+        "The rattle is made of keratin, the same material as your fingernails.",
+        "It lives in deserts, scrub and rocky areas of the southwestern US and northern Mexico."
+      ],
+      "range": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[[-118,34],[-103,37],[-94,33],[-97,26],[-105,22],[-112,26],[-115,31],[-118,34]]]
+        ]
+      }
+    }
+  ]
+}

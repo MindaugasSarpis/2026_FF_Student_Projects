@@ -1,1 +1,0 @@
-# Domas Sakalauskas

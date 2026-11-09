@@ -1,0 +1,10 @@
+# Analysis (skripte/auswertung.py) only needs certifi (to fetch new ECB exchange rates).
+certifi>=2024.2
+# Querying the sellers' websites (taeglich.py, skripte/<seller>.py); only tested on Windows with Google Chrome
+selenium>=4.20
+undetected-chromedriver>=3.5
+# Figures, website, helper scripts
+pandas>=2.2
+matplotlib>=3.8
+pillow>=10.0
+fonttools>=4.50

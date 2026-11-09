@@ -1,0 +1,47 @@
+abfrage_datum;abfrage_uhrzeit;reise_datum;strecke_nr;strecke;quelle;start;ziel;abfahrt;ankunft;dauer_min;umstiege;zuege;klasse;tarif;preis;waehrung;bemerkung
+2026-10-13;23:35;2026-11-04;101;Wien - Frankfurt;bahn.de;Wien Hbf;Frankfurt(Main)Hbf;07:57;16:09;492;2;IC 544 + WB 962 + ICE 596;2;;;EUR;kein Preis angezeigt
+2026-10-13;23:35;2026-11-04;101;Wien - Frankfurt;bahn.de;Wien Hbf;Frankfurt(Main)Hbf;08:28;17:02;514;4;RJX 19962 + REX 50 + RE22 + ICE 624;2;;46,99;EUR;
+2026-10-13;23:35;2026-11-04;101;Wien - Frankfurt;bahn.de;Wien Hbf;Frankfurt(Main)Hbf;08:28;17:09;521;2;RJX 262 + ICE 516 + ICE 278;2;;55,99;EUR;
+2026-10-13;23:35;2026-11-04;101;Wien - Frankfurt;bahn.de;Wien Hbf;Frankfurt(Main)Hbf;09:28;18:02;514;3;RJX 19952 + ICE 118 + ICE 786 + ICE 622;2;;69,99;EUR;
+2026-10-13;23:35;2026-11-04;101;Wien - Frankfurt;bahn.de;Wien Hbf;Frankfurt(Main)Hbf;09:57;18:09;492;2;IC 548 + WB 964 + ICE 594;2;;;EUR;kein Preis angezeigt
+2026-10-13;23:35;2026-11-04;102;Wien - Nürnberg;bahn.de;Wien Hbf;Nürnberg Hbf;08:28;14:47;379;3;RJX 19962 + REX 50 + RE22;2;;135,00;EUR;
+2026-10-13;23:35;2026-11-04;102;Wien - Nürnberg;bahn.de;Wien Hbf;Nürnberg Hbf;08:28;14:55;387;1;RJX 262 + RE1;2;;58,99;EUR;
+2026-10-13;23:35;2026-11-04;102;Wien - Nürnberg;bahn.de;Wien Hbf;Nürnberg Hbf;09:28;16:06;398;5;RJX 19952 + REX 51 + RE22 + S2;2;;125,00;EUR;
+2026-10-13;23:35;2026-11-04;102;Wien - Nürnberg;bahn.de;Wien Hbf;Nürnberg Hbf;09:28;16:16;408;4;RJX 19952 + ICE 118 + ICE 786 + RE80 + RB16;2;;75,99;EUR;
+2026-10-13;23:35;2026-11-04;102;Wien - Nürnberg;bahn.de;Wien Hbf;Nürnberg Hbf;09:28;16:25;417;2;RJX 19952 + ICE 118 + ICE 1004;2;;56,99;EUR;
+2026-10-13;23:36;2026-11-04;103;Wien - Regensburg;bahn.de;Wien Hbf;Regensburg Hbf;08:28;13:30;302;2;RJX 19962 + REX 50;2;;114,80;EUR;
+2026-10-13;23:36;2026-11-04;103;Wien - Regensburg;bahn.de;Wien Hbf;Regensburg Hbf;09:28;14:25;297;3;RJX 19952 + REX 51;2;;101,90;EUR;
+2026-10-13;23:36;2026-11-04;103;Wien - Regensburg;bahn.de;Wien Hbf;Regensburg Hbf;10:28;15:30;302;2;RJX 60 + REX 50;2;;114,80;EUR;
+2026-10-13;23:36;2026-11-04;103;Wien - Regensburg;bahn.de;Wien Hbf;Regensburg Hbf;11:13;17:27;374;1;ICE 1214 + RE25;2;;46,99;EUR;
+2026-10-13;23:36;2026-11-04;103;Wien - Regensburg;bahn.de;Wien Hbf;Regensburg Hbf;11:28;17:05;337;3;RJX 19976 + REX 50;2;;114,80;EUR;
+2026-10-13;23:36;2026-11-04;103;Wien - Regensburg;bahn.de;Wien Hbf;Regensburg Hbf;11:28;17:10;342;2;RJX 19976 + REX 50;2;;114,80;EUR;
+2026-10-13;23:37;2026-11-04;104;Wien - Plattling;bahn.de;Wien Hbf;Plattling;08:28;12:13;225;2;RJX 19962 + REX 50;2;;96,50;EUR;
+2026-10-13;23:37;2026-11-04;104;Wien - Plattling;bahn.de;Wien Hbf;Plattling;09:28;13:45;257;3;RJX 19952 + REX 51;2;;96,50;EUR;
+2026-10-13;23:37;2026-11-04;104;Wien - Plattling;bahn.de;Wien Hbf;Plattling;10:28;14:13;225;2;RJX 60 + REX 50;2;;96,50;EUR;
+2026-10-13;23:37;2026-11-04;104;Wien - Plattling;bahn.de;Wien Hbf;Plattling;11:28;15:45;257;2;RJX 19976 + REX 50;2;;96,50;EUR;
+2026-10-13;23:37;2026-11-04;104;Wien - Plattling;bahn.de;Wien Hbf;Plattling;12:28;16:13;225;2;RJX 62 + REX 50;2;;96,50;EUR;
+2026-10-13;23:38;2026-11-04;103;Wien - Regensburg;oebb.at;Wien Hbf;Regensburg Hbf;08:28;13:30;302;2;RJX 262 + Regional Express 50 + Fußweg + Schienenersatzverkehr RE50 + REX 50 + RE50;2;;;EUR;kein Preis angezeigt
+2026-10-13;23:38;2026-11-04;103;Wien - Regensburg;oebb.at;Wien Hbf;Regensburg Hbf;08:28;15:12;404;1;RJX 262 + Fußweg + Zug RE2;2;;;EUR;kein Preis angezeigt
+2026-10-13;23:38;2026-11-04;103;Wien - Regensburg;oebb.at;Wien Hbf;Regensburg Hbf;09:13;17:12;479;1;EC 1216 + Fußweg + Zug RE2;2;;;EUR;kein Preis angezeigt
+2026-10-13;23:38;2026-11-04;103;Wien - Regensburg;oebb.at;Wien Hbf;Regensburg Hbf;09:57;15:30;333;2;IC 548 + Regional Express 50 + Fußweg + Schienenersatzverkehr RE50 + REX 50 + RE50;2;;;EUR;kein Preis angezeigt
+2026-10-13;23:38;2026-11-04;103;Wien - Regensburg;oebb.at;Wien Hbf;Regensburg Hbf;10:28;15:30;302;2;RJX 60 + Regional Express 50 + Fußweg + Schienenersatzverkehr RE50 + REX 50 + RE50;2;;;EUR;kein Preis angezeigt
+2026-10-13;23:38;2026-11-04;105;Wien - Passau;bahn.de;Wien Hbf;Passau Hbf;08:28;11:12;164;1;RJX 19962 + REX 50;2;;;EUR;kein Preis angezeigt
+2026-10-13;23:38;2026-11-04;105;Wien - Passau;bahn.de;Wien Hbf;Passau Hbf;09:28;12:25;177;2;RJX 19952 + REX 51;2;;;EUR;kein Preis angezeigt
+2026-10-13;23:38;2026-11-04;105;Wien - Passau;bahn.de;Wien Hbf;Passau Hbf;10:28;13:12;164;1;RJX 60 + REX 50;2;;;EUR;kein Preis angezeigt
+2026-10-13;23:38;2026-11-04;105;Wien - Passau;bahn.de;Wien Hbf;Passau Hbf;11:28;14:22;174;1;RJX 19976 + REX 50;2;;;EUR;kein Preis angezeigt
+2026-10-13;23:38;2026-11-04;105;Wien - Passau;bahn.de;Wien Hbf;Passau Hbf;12:28;15:12;164;1;RJX 62 + REX 50;2;;;EUR;kein Preis angezeigt
+2026-10-13;23:38;2026-11-04;104;Wien - Plattling;oebb.at;Wien Hbf;Plattling;08:28;12:13;225;2;RJX 262 + Regional Express 50 + Fußweg + Schienenersatzverkehr RE50 + REX 50 + RE50;2;;83,40;EUR;
+2026-10-13;23:38;2026-11-04;104;Wien - Plattling;oebb.at;Wien Hbf;Plattling;09:57;14:13;256;2;IC 548 + Regional Express 50 + Fußweg + Schienenersatzverkehr RE50 + REX 50 + RE50;2;;83,40;EUR;
+2026-10-13;23:38;2026-11-04;104;Wien - Plattling;oebb.at;Wien Hbf;Plattling;10:28;14:13;225;2;RJX 60 + Regional Express 50 + Fußweg + Schienenersatzverkehr RE50 + REX 50 + RE50;2;;83,40;EUR;
+2026-10-13;23:38;2026-11-04;104;Wien - Plattling;oebb.at;Wien Hbf;Plattling;11:13;15:45;272;2;ICE 1214 + Regional Express 50 + Fußweg + Schienenersatzverkehr RE3 + REX 50 + RE3;2;;83,40;EUR;
+2026-10-13;23:38;2026-11-04;104;Wien - Plattling;oebb.at;Wien Hbf;Plattling;11:28;15:45;257;2;RJX 19976 + Regional Express 50 + Fußweg + Schienenersatzverkehr RE3 + REX 50 + RE3;2;;83,40;EUR;
+2026-10-13;23:39;2026-11-04;105;Wien - Passau;oebb.at;Wien Hbf;Passau Hbf;08:28;11:12;164;1;RJX 262 + Regional Express 50 + REX 50;2;Sparschiene;19,90;EUR;
+2026-10-13;23:39;2026-11-04;105;Wien - Passau;oebb.at;Wien Hbf;Passau Hbf;09:13;12:25;192;2;EC 1216 + Regionalzug 51 + Regionalzug 50;2;Sparschiene;19,90;EUR;
+2026-10-13;23:39;2026-11-04;105;Wien - Passau;oebb.at;Wien Hbf;Passau Hbf;09:28;12:25;177;2;RJX 162 + Regional Express 51 + Regionalzug 50 + REX 51;2;Sparschiene;19,90;EUR;
+2026-10-13;23:39;2026-11-04;105;Wien - Passau;oebb.at;Wien Hbf;Passau Hbf;09:57;13:12;195;1;IC 548 + Regional Express 50 + REX 50;2;Sparschiene;19,90;EUR;
+2026-10-13;23:39;2026-11-04;105;Wien - Passau;oebb.at;Wien Hbf;Passau Hbf;10:28;13:12;164;1;RJX 60 + Regional Express 50 + REX 50;2;Sparschiene;24,90;EUR;
+2026-10-13;23:43;2026-11-05;15;München - Wien;oebb.at;München Hbf;Wien Hbf;10:16;14:32;256;1;EC 115 + RJX 186;2;Sparschiene;63,40;EUR;
+2026-10-13;23:43;2026-11-05;15;München - Wien;oebb.at;München Hbf;Wien Hbf;10:20;14:47;267;0;EC 1213;2;;44,50;EUR;
+2026-10-13;23:43;2026-11-05;15;München - Wien;oebb.at;München Hbf;Wien Hbf;11:13;15:32;259;0;RJX 65;2;Sparschiene;37,10;EUR;
+2026-10-13;23:43;2026-11-05;15;München - Wien;oebb.at;München Hbf;Wien Hbf;11:13;16:03;290;1;RJX 65 + IC 647;2;;32,90;EUR;
+2026-10-13;23:43;2026-11-05;15;München - Wien;oebb.at;München Hbf;Wien Hbf;12:09;16:47;278;0;ICE 1215;2;;44,50;EUR;

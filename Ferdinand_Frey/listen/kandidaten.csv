@@ -1,0 +1,86 @@
+nr;strecke;seite;start;ziel
+53;Paris - Zürich;db;Paris Gare de Lyon;Zürich HB
+54;Paris - Basel;sbb;Paris Gare de Lyon;Basel SBB
+54;Paris - Basel;db;Paris Gare de Lyon;Basel SBB
+55;Amsterdam - Berlin;oebb;Amsterdam Centraal;Berlin Hbf
+59;Wien - Bratislava;oebb;Wien Hbf;Bratislava hl.st.
+59;Wien - Bratislava;omio;Vienna;Bratislava
+2;Vilnius - Tartu;db;Vilnius;Tartu
+3;Vilnius - Tallinn;db;Vilnius;Tallinn
+4;Riga - Tartu;db;Riga;Tartu
+5;Riga - Tallinn;db;Riga;Tallinn
+13;Krakau - Wien;db;Krakow Glowny;Wien Hbf
+18;Zürich - Wien;db;Zürich HB;Wien Hbf
+20;Zürich - Mailand;db;Zürich HB;Milano Centrale
+24;Wien - Venedig;db;Wien Hbf;Venezia Santa Lucia
+25;Budapest - Wien;db;Budapest-Keleti;Wien Hbf
+27;Budapest - Warschau;db;Budapest-Keleti;Warszawa Centralna
+31;Prag - Wien;db;Praha hl.n.;Wien Hbf
+37;Prag - Budapest;db;Praha hl.n.;Budapest-Keleti
+46;Brüssel - Amsterdam;db;Bruxelles Midi;Amsterdam Centraal
+47;Paris - Brüssel;db;Paris Gare de Lyon;Bruxelles Midi
+51;London - Brüssel;db;London St Pancras International;Bruxelles Midi
+52;London - Paris;db;London St Pancras International;Paris Gare de Lyon
+9;Warschau - Berlin;oebb;Warszawa Centralna;Berlin Hbf
+10;Danzig - Berlin;oebb;Gdansk Glowny;Berlin Hbf
+11;Krakau - Berlin;oebb;Krakow Glowny;Berlin Hbf
+19;Hamburg - Zürich;oebb;Hamburg Hbf;Zürich HB
+20;Zürich - Mailand;oebb;Zürich HB;Milano Centrale
+21;Frankfurt - Mailand;oebb;Frankfurt(Main)Hbf;Milano Centrale
+28;Köln - Paris;oebb;Köln Hbf;Paris Est
+30;Prag - Berlin;oebb;Praha hl.n.;Berlin Hbf
+32;Prag - München;oebb;Praha hl.n.;München Hbf
+33;Paris - Frankfurt;oebb;Paris Est;Frankfurt(Main)Hbf
+49;Paris - Mailand;oebb;Paris Est;Milano Centrale
+50;Brüssel - Frankfurt;oebb;Bruxelles Midi;Frankfurt(Main)Hbf
+53;Paris - Zürich;oebb;Paris Est;Zürich HB
+9;Warschau - Berlin;cd;Warszawa Centralna;Berlin Hbf
+10;Danzig - Berlin;cd;Gdańsk Główny;Berlin Hbf
+11;Krakau - Berlin;cd;Kraków Główny;Berlin Hbf
+12;Warschau - Wien;cd;Warszawa Centralna;Wien Hbf
+13;Krakau - Wien;cd;Kraków Główny;Wien Hbf
+15;München - Wien;cd;München Hbf;Wien Hbf
+16;Berlin - Wien;cd;Berlin Hbf;Wien Hbf
+18;Zürich - Wien;cd;Zürich HB;Wien Hbf
+25;Budapest - Wien;cd;Budapest;Wien Hbf
+26;Budapest - München;cd;Budapest;München Hbf
+38;Berlin - München;cd;Berlin Hbf;München Hbf
+39;Wien - München;cd;Wien Hbf;München Hbf
+41;Wien - Regensburg;cd;Wien Hbf;Regensburg Hbf
+42;Wien - Nürnberg;cd;Wien Hbf;Nürnberg Hbf
+44;Berlin - Dresden;cd;Berlin Hbf;Dresden Hbf
+57;Salzburg - München;cd;Salzburg Hbf;München Hbf
+12;Warschau - Wien;mav;Warszawa Centralna;Wien Hbf
+13;Krakau - Wien;mav;Kraków Główny;Wien Hbf
+14;Warschau - Prag;mav;Warszawa Centralna;Praha hl. n.
+15;München - Wien;mav;München Hbf;Wien Hbf
+31;Prag - Wien;mav;Praha hl. n.;Wien Hbf
+32;Prag - München;mav;Praha hl. n.;München Hbf
+39;Wien - München;mav;Wien Hbf;München Hbf
+41;Wien - Regensburg;mav;Wien Hbf;Regensburg Hbf
+42;Wien - Nürnberg;mav;Wien Hbf;Nürnberg Hbf
+16;Berlin - Wien;pkp;Berlin Hbf;Wien Hbf
+25;Budapest - Wien;pkp;Budapest-Keleti;Wien Hbf
+30;Prag - Berlin;pkp;Praha hl.n.;Berlin Hbf
+31;Prag - Wien;pkp;Praha hl.n.;Wien Hbf
+37;Prag - Budapest;pkp;Praha hl.n.;Budapest-Keleti
+45;Berlin - Prag;pkp;Berlin Hbf;Praha hl.n.
+16;Berlin - Wien;sbb;Berlin Hbf;Wien Hbf
+22;München - Verona;sbb;München Hbf;Verona Porta Nuova
+26;Budapest - München;sbb;Budapest-Keleti;München Hbf
+33;Paris - Frankfurt;sbb;Paris Gare de Lyon;Frankfurt (Main) Hbf
+38;Berlin - München;sbb;Berlin Hbf;München Hbf
+39;Wien - München;sbb;Wien Hbf;München Hbf
+56;Amsterdam - Frankfurt;sbb;Amsterdam Centraal;Frankfurt (Main) Hbf
+57;Salzburg - München;sbb;Salzburg Hbf;München Hbf
+18;Zürich - Wien;trenitalia;Zurigo;Wien Hauptbahnhof
+39;Wien - München;trenitalia;Wien Hauptbahnhof;Monaco Hbf
+53;Paris - Zürich;trenitalia;Parigi Gare De Lyon;Zurigo
+33;Paris - Frankfurt;sncb;Paris Nord (Fr);Frankfurt (Main) Hbf (De)
+52;London - Paris;sncb;London St Pancras (Gb);Paris Nord (Fr)
+55;Amsterdam - Berlin;sncb;Amsterdam CS (Nl);Berlin Hbf (De)
+56;Amsterdam - Frankfurt;sncb;Amsterdam CS (Nl);Frankfurt (Main) Hbf (De)
+4;Riga - Tartu;ltg;Riga;Tartu/Tartu
+5;Riga - Tallinn;ltg;Riga;Talinas/Tallinn
+16;Berlin - Wien;mav;Berlin Hbf;Wien Hbf
+97;Bukarest - Budapest;cd;Bucuresti Nord Gr. A;Budapest

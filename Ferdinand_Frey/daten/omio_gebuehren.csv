@@ -1,0 +1,4 @@
+notiert_am;strecke_nr;strecke;ticketpreis;servicegebuehr;gesamt;waehrung;quelle
+2026-10-15;9;Warschau - Berlin;54,00;4,00;58,00;EUR;von Hand im Bezahlschritt abgelesen
+2026-10-15;;Paris - Berlin;142,00;9,00;151,00;EUR;von Hand im Bezahlschritt abgelesen (Strecke nicht in strecken.csv)
+2026-10-15;;unbekannt (vermutlich Prag - Wien);16,90;2,00;18,90;EUR;von Hand im Bezahlschritt abgelesen

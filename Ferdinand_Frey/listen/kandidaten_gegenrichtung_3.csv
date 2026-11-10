@@ -1,0 +1,28 @@
+nr;strecke;seite;start;ziel
+60;Warschau - Vilnius;pkp;Warszawa Centralna;Vilnius
+66;Wien - Prag;cd;Wien Hbf;Praha hl.n.
+67;München - Prag;cd;München Hbf;Praha hl.n.
+68;München - Berlin;cd;München Hbf;Berlin Hbf
+70;Krakau - Vilnius;ltg;Kraków Główny;Vilnius
+70;Krakau - Vilnius;pkp;Kraków Główny;Vilnius
+71;Warschau - Kaunas;ltg;Warszawa Centralna;Kaunas
+71;Warschau - Kaunas;pkp;Warszawa Centralna;Kaunas
+72;Berlin - Warschau;pkp;Berlin Hbf;Warszawa Centralna
+73;Wien - Warschau;oebb;Wien Hbf;Warszawa Centralna
+73;Wien - Warschau;pkp;Wien Hbf;Warszawa Centralna
+74;Wien - Krakau;oebb;Wien Hbf;Krakow Glowny
+74;Wien - Krakau;pkp;Wien Hbf;Kraków Główny
+75;Prag - Warschau;cd;Praha hl.n.;Warszawa Centralna
+75;Prag - Warschau;oebb;Praha hl.n.;Warszawa Centralna
+75;Prag - Warschau;pkp;Praha hl.n.;Warszawa Centralna
+76;München - Zürich;oebb;München Hbf;Zürich HB
+77;Wien - Zürich;oebb;Wien Hbf;Zürich HB
+79;Verona - Innsbruck;oebb;Verona Porta Nuova;Innsbruck Hbf
+80;Venedig - Wien;oebb;Venezia Santa Lucia;Wien Hbf
+81;München - Budapest;oebb;München Hbf;Budapest-Keleti
+82;Warschau - Budapest;oebb;Warszawa Centralna;Budapest-Keleti
+82;Warschau - Budapest;pkp;Warszawa Centralna;Budapest-Keleti
+87;Nürnberg - Wien;oebb;Nürnberg Hbf;Wien Hbf
+94;Frankfurt - Amsterdam;oebb;Frankfurt(Main)Hbf;Amsterdam Centraal
+95;München - Salzburg;oebb;München Hbf;Salzburg Hbf
+96;Kopenhagen - Hamburg;oebb;Koebenhavn H;Hamburg Hbf

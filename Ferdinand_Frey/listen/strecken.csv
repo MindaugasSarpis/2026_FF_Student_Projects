@@ -1,0 +1,366 @@
+nr;strecke;seite;start;ziel
+2;Vilnius - Tartu;elron;Vilnius;Tartu
+2;Vilnius - Tartu;ltg;Vilnius;Tartu/Tartu
+3;Vilnius - Tallinn;elron;Vilnius;Tallinn
+3;Vilnius - Tallinn;ltg;Vilnius;Talinas/Tallinn
+4;Riga - Tartu;elron;Riia;Tartu
+5;Riga - Tallinn;elron;Riia;Tallinn
+6;Vilnius - Warschau;ltg;Vilnius;Warszawa Centralna
+6;Vilnius - Warschau;pkp;Vilnius;Warszawa Centralna
+7;Vilnius - Krakau;ltg;Vilnius;Kraków Główny
+7;Vilnius - Krakau;pkp;Vilnius;Kraków Główny
+8;Kaunas - Warschau;ltg;Kaunas;Warszawa Centralna
+8;Kaunas - Warschau;pkp;Kaunas;Warszawa Centralna
+9;Warschau - Berlin;db;Warszawa Centralna;Berlin Hbf
+9;Warschau - Berlin;pkp;Warszawa Centralna;Berlin Hbf
+10;Danzig - Berlin;db;Gdansk Glowny;Berlin Hbf
+10;Danzig - Berlin;pkp;Gdańsk Główny;Berlin Hbf
+11;Krakau - Berlin;db;Krakow Glowny;Berlin Hbf
+11;Krakau - Berlin;pkp;Kraków Główny;Berlin Hbf
+12;Warschau - Wien;oebb;Warszawa Centralna;Wien Hbf
+12;Warschau - Wien;pkp;Warszawa Centralna;Wien Hbf
+13;Krakau - Wien;oebb;Krakow Glowny;Wien Hbf
+13;Krakau - Wien;pkp;Kraków Główny;Wien Hbf
+14;Warschau - Prag;cd;Warszawa Centralna;Praha hl.n.
+14;Warschau - Prag;pkp;Warszawa Centralna;Praha hl.n.
+15;München - Wien;db;München Hbf;Wien Hbf
+15;München - Wien;oebb;München Hbf;Wien Hbf
+16;Berlin - Wien;db;Berlin Hbf;Wien Hbf
+16;Berlin - Wien;oebb;Berlin Hbf;Wien Hbf
+17;Zürich - München;db;Zürich HB;München Hbf
+17;Zürich - München;oebb;Zürich HB;München Hbf
+17;Zürich - München;sbb;Zürich HB;München Hbf
+18;Zürich - Wien;oebb;Zürich HB;Wien Hbf
+18;Zürich - Wien;sbb;Zürich HB;Wien Hbf
+19;Hamburg - Zürich;db;Hamburg Hbf;Zürich HB
+19;Hamburg - Zürich;sbb;Hamburg Hbf;Zürich HB
+20;Zürich - Mailand;sbb;Zürich HB;Milano Centrale
+20;Zürich - Mailand;trenitalia;Zurigo;Milano Centrale
+21;Frankfurt - Mailand;db;Frankfurt(Main)Hbf;Milano Centrale
+21;Frankfurt - Mailand;sbb;Frankfurt (Main) Hbf;Milano Centrale
+22;München - Verona;db;München Hbf;Verona Porta Nuova
+22;München - Verona;oebb;München Hbf;Verona Porta Nuova
+22;München - Verona;trenitalia;Monaco Hbf;Verona Porta Nuova
+23;Innsbruck - Verona;db;Innsbruck Hbf;Verona Porta Nuova
+23;Innsbruck - Verona;oebb;Innsbruck Hbf;Verona Porta Nuova
+23;Innsbruck - Verona;trenitalia;Innsbruck Hbf;Verona Porta Nuova
+24;Wien - Venedig;oebb;Wien Hbf;Venezia Santa Lucia
+24;Wien - Venedig;trenitalia;Wien Hauptbahnhof;Venezia S. Lucia
+25;Budapest - Wien;mav;Budapest-Keleti;Wien Hbf
+25;Budapest - Wien;oebb;Budapest-Keleti;Wien Hbf
+26;Budapest - München;db;Budapest-Keleti;München Hbf
+26;Budapest - München;mav;Budapest-Keleti;München Hbf
+26;Budapest - München;oebb;Budapest-Keleti;München Hbf
+27;Budapest - Warschau;mav;Budapest-Keleti;Warszawa Centralna
+27;Budapest - Warschau;pkp;Budapest-Keleti;Warszawa Centralna
+28;Köln - Paris;db;Köln Hbf;Paris Nord
+28;Köln - Paris;eurostar;Köln Hbf;Paris Nord
+28;Köln - Paris;sncb;Koln Hbf (De);Paris Nord (Fr)
+29;Köln - Brüssel;db;Köln Hbf;Bruxelles Midi
+29;Köln - Brüssel;eurostar;Köln Hbf;Bruxelles-Midi
+29;Köln - Brüssel;sncb;Koln Hbf (De);Bruxelles-Midi (Be)
+30;Prag - Berlin;cd;Praha hl.n.;Berlin Hbf
+30;Prag - Berlin;db;Praha hl.n.;Berlin Hbf
+31;Prag - Wien;cd;Praha hl.n.;Wien Hbf
+31;Prag - Wien;oebb;Praha hl.n.;Wien Hbf
+32;Prag - München;cd;Praha hl.n.;München Hbf
+32;Prag - München;db;Praha hl.n.;München Hbf
+33;Paris - Frankfurt;db;Paris Est;Frankfurt(Main)Hbf
+33;Paris - Frankfurt;sbb;Paris Est;Frankfurt (Main) Hbf
+37;Prag - Budapest;cd;Praha hl.n.;Budapest
+37;Prag - Budapest;mav;Praha hl. n.;Budapest
+38;Berlin - München;db;Berlin Hbf;München Hbf
+39;Wien - München;db;Wien Hbf;München Hbf
+39;Wien - München;oebb;Wien Hbf;München Hbf
+41;Wien - Regensburg;db;Wien Hbf;Regensburg Hbf
+41;Wien - Regensburg;oebb;Wien Hbf;Regensburg Hbf
+42;Wien - Nürnberg;db;Wien Hbf;Nürnberg Hbf
+42;Wien - Nürnberg;oebb;Wien Hbf;Nürnberg Hbf
+44;Berlin - Dresden;db;Berlin Hbf;Dresden Hbf
+45;Berlin - Prag;cd;Berlin Hbf;Praha hl.n.
+45;Berlin - Prag;db;Berlin Hbf;Praha hl.n.
+46;Brüssel - Amsterdam;eurostar;Bruxelles-Midi;Amsterdam Centraal
+46;Brüssel - Amsterdam;sncb;Bruxelles-Midi (Be);Amsterdam CS (Nl)
+47;Paris - Brüssel;eurostar;Paris Nord;Bruxelles-Midi
+47;Paris - Brüssel;sncb;Paris Nord (Fr);Bruxelles-Midi (Be)
+48;Paris - Lyon;db;Paris Gare de Lyon;Lyon Part Dieu
+48;Paris - Lyon;ouigo;Paris Gare de Lyon;Lyon Part Dieu
+48;Paris - Lyon;trenitalia;Parigi Gare De Lyon;Lyon Part Dieu
+50;Brüssel - Frankfurt;db;Bruxelles Midi;Frankfurt(Main)Hbf
+50;Brüssel - Frankfurt;sncb;Bruxelles-Midi (Be);Frankfurt (Main) Hbf (De)
+9;Warschau - Berlin;omio;Warsaw;Berlin
+14;Warschau - Prag;omio;Warsaw;Prague
+15;München - Wien;omio;Munich;Vienna
+18;Zürich - Wien;omio;Zurich;Vienna
+31;Prag - Wien;omio;Prague;Vienna
+37;Prag - Budapest;omio;Prague;Budapest
+45;Berlin - Prag;omio;Berlin;Prague
+48;Paris - Lyon;omio;Paris;Lyon
+49;Paris - Mailand;trenitalia;Parigi Gare De Lyon;Milano Centrale
+49;Paris - Mailand;sbb;Paris Gare de Lyon;Milano Centrale
+51;London - Brüssel;eurostar;London St Pancras;Bruxelles-Midi
+51;London - Brüssel;sncb;London St Pancras (Gb);Bruxelles-Midi (Be)
+51;London - Brüssel;omio;London;Brussels
+52;London - Paris;eurostar;London St Pancras;Paris Nord
+52;London - Paris;omio;London;Paris
+53;Paris - Zürich;sbb;Paris Gare de Lyon;Zürich HB
+53;Paris - Zürich;omio;Paris;Zurich
+55;Amsterdam - Berlin;db;Amsterdam Centraal;Berlin Hbf
+55;Amsterdam - Berlin;omio;Amsterdam;Berlin
+56;Amsterdam - Frankfurt;db;Amsterdam Centraal;Frankfurt(Main)Hbf
+56;Amsterdam - Frankfurt;omio;Amsterdam;Frankfurt
+57;Salzburg - München;db;Salzburg Hbf;München Hbf
+57;Salzburg - München;oebb;Salzburg Hbf;München Hbf
+58;Hamburg - Kopenhagen;db;Hamburg Hbf;Kopenhagen Hbf
+58;Hamburg - Kopenhagen;omio;Hamburg;Copenhagen
+61;Wien - Berlin;db;Wien Hbf;Berlin Hbf
+61;Wien - Berlin;oebb;Wien Hbf;Berlin Hbf
+64;Verona - München;db;Verona Porta Nuova;München Hbf
+64;Verona - München;oebb;Verona Porta Nuova;München Hbf
+64;Verona - München;trenitalia;Verona Porta Nuova;Monaco Hbf
+65;Wien - Budapest;mav;Wien Hbf;Budapest-Keleti
+65;Wien - Budapest;oebb;Wien Hbf;Budapest-Keleti
+68;München - Berlin;db;München Hbf;Berlin Hbf
+68;München - Berlin;oebb;München Hbf;Berlin Hbf
+69;Lyon - Paris;db;Lyon Part Dieu;Paris Gare de Lyon
+69;Lyon - Paris;ouigo;Lyon Part Dieu;Paris Gare de Lyon
+69;Lyon - Paris;trenitalia;Lyon Part Dieu;Parigi Gare De Lyon
+69;Lyon - Paris;omio;Lyon;Paris
+76;München - Zürich;db;München Hbf;Zürich HB
+76;München - Zürich;sbb;München Hbf;Zürich HB
+86;Budapest - Prag;cd;Budapest;Praha hl.n.
+86;Budapest - Prag;mav;Budapest;Praha hl. n.
+86;Budapest - Prag;omio;Budapest;Prague
+56;Amsterdam - Frankfurt;ns;Amsterdam Central;Frankfurt (Main) Hbf
+55;Amsterdam - Berlin;ns;Amsterdam Central;Berlin Hbf
+31;Prag - Wien;regiojet;Prague, Czech Republic;Vienna, Austria
+66;Wien - Prag;regiojet;Vienna, Austria;Prague, Czech Republic
+37;Prag - Budapest;regiojet;Prague, Czech Republic;Budapest, Hungary
+86;Budapest - Prag;regiojet;Budapest, Hungary;Prague, Czech Republic
+25;Budapest - Wien;regiojet;Budapest, Hungary;Vienna, Austria
+65;Wien - Budapest;regiojet;Vienna, Austria;Budapest, Hungary
+97;Bukarest - Budapest;cfr;Bucuresti Nord;Budapest-Keleti
+97;Bukarest - Budapest;mav;Bucuresti Nord;Budapest-Keleti
+60;Warschau - Vilnius;ltg;Warszawa Centralna;Vilnius
+60;Warschau - Vilnius;pkp;Warszawa Centralna;Vilnius
+62;Mailand - Zürich;sbb;Milano Centrale;Zürich HB
+62;Mailand - Zürich;trenitalia;Milano Centrale;Zurigo
+63;Mailand - Frankfurt;db;Milano Centrale;Frankfurt(Main)Hbf
+63;Mailand - Frankfurt;sbb;Milano Centrale;Frankfurt (Main) Hbf
+66;Wien - Prag;cd;Wien Hbf;Praha hl.n.
+66;Wien - Prag;oebb;Wien Hbf;Praha hl.n.
+66;Wien - Prag;omio;Vienna;Prague
+67;München - Prag;cd;München Hbf;Praha hl.n.
+67;München - Prag;db;München Hbf;Praha hl.n.
+70;Krakau - Vilnius;ltg;Kraków Główny;Vilnius
+70;Krakau - Vilnius;pkp;Kraków Główny;Vilnius
+71;Warschau - Kaunas;ltg;Warszawa Centralna;Kaunas
+71;Warschau - Kaunas;pkp;Warszawa Centralna;Kaunas
+72;Berlin - Warschau;db;Berlin Hbf;Warszawa Centralna
+72;Berlin - Warschau;pkp;Berlin Hbf;Warszawa Centralna
+72;Berlin - Warschau;omio;Berlin;Warsaw
+74;Wien - Krakau;oebb;Wien Hbf;Krakow Glowny
+74;Wien - Krakau;pkp;Wien Hbf;Kraków Główny
+75;Prag - Warschau;cd;Praha hl.n.;Warszawa Centralna
+75;Prag - Warschau;db;Praha hl.n.;Warszawa Centralna
+75;Prag - Warschau;oebb;Praha hl.n.;Warszawa Centralna
+75;Prag - Warschau;pkp;Praha hl.n.;Warszawa Centralna
+75;Prag - Warschau;omio;Prague;Warsaw
+77;Wien - Zürich;oebb;Wien Hbf;Zürich HB
+77;Wien - Zürich;sbb;Wien Hbf;Zürich HB
+77;Wien - Zürich;omio;Vienna;Zurich
+78;Zürich - Hamburg;db;Zürich HB;Hamburg Hbf
+78;Zürich - Hamburg;sbb;Zürich HB;Hamburg Hbf
+79;Verona - Innsbruck;db;Verona Porta Nuova;Innsbruck Hbf
+79;Verona - Innsbruck;oebb;Verona Porta Nuova;Innsbruck Hbf
+79;Verona - Innsbruck;trenitalia;Verona Porta Nuova;Innsbruck Hbf
+80;Venedig - Wien;oebb;Venezia Santa Lucia;Wien Hbf
+80;Venedig - Wien;trenitalia;Venezia S. Lucia;Wien Hauptbahnhof
+81;München - Budapest;db;München Hbf;Budapest-Keleti
+81;München - Budapest;mav;München Hbf;Budapest-Keleti
+81;München - Budapest;oebb;München Hbf;Budapest-Keleti
+83;Paris - Köln;eurostar;Paris Nord;Köln Hbf
+83;Paris - Köln;sncb;Paris Nord (Fr);Koln Hbf (De)
+84;Brüssel - Köln;db;Bruxelles Midi;Köln Hbf
+84;Brüssel - Köln;eurostar;Bruxelles-Midi;Köln Hbf
+84;Brüssel - Köln;sncb;Bruxelles-Midi (Be);Koln Hbf (De)
+85;Frankfurt - Paris;db;Frankfurt(Main)Hbf;Paris Est
+85;Frankfurt - Paris;sbb;Frankfurt (Main) Hbf;Paris Est
+87;Nürnberg - Wien;db;Nürnberg Hbf;Wien Hbf
+87;Nürnberg - Wien;oebb;Nürnberg Hbf;Wien Hbf
+89;Mailand - Paris;trenitalia;Milano Centrale;Parigi Gare De Lyon
+89;Mailand - Paris;sbb;Milano Centrale;Paris Gare de Lyon
+90;Brüssel - London;eurostar;Bruxelles-Midi;London St Pancras
+90;Brüssel - London;sncb;Bruxelles-Midi (Be);London St Pancras (Gb)
+90;Brüssel - London;omio;Brussels;London
+91;Paris - London;eurostar;Paris Nord;London St Pancras
+91;Paris - London;omio;Paris;London
+92;Zürich - Paris;sbb;Zürich HB;Paris Gare de Lyon
+92;Zürich - Paris;omio;Zurich;Paris
+93;Berlin - Amsterdam;db;Berlin Hbf;Amsterdam Centraal
+93;Berlin - Amsterdam;omio;Berlin;Amsterdam
+94;Frankfurt - Amsterdam;db;Frankfurt(Main)Hbf;Amsterdam Centraal
+94;Frankfurt - Amsterdam;oebb;Frankfurt(Main)Hbf;Amsterdam Centraal
+94;Frankfurt - Amsterdam;omio;Frankfurt;Amsterdam
+95;München - Salzburg;db;München Hbf;Salzburg Hbf
+95;München - Salzburg;oebb;München Hbf;Salzburg Hbf
+96;Kopenhagen - Hamburg;db;Kopenhagen Hbf;Hamburg Hbf
+96;Kopenhagen - Hamburg;oebb;Koebenhavn H;Hamburg Hbf
+96;Kopenhagen - Hamburg;omio;Copenhagen;Hamburg
+186;Augsburg - Wien;db;Augsburg Hbf;Wien Hbf
+186;Augsburg - Wien;oebb;Augsburg Hbf;Wien Hbf
+186;Augsburg - Wien;omio;Augsburg;Vienna
+187;Wien - Augsburg;db;Wien Hbf;Augsburg Hbf
+187;Wien - Augsburg;oebb;Wien Hbf;Augsburg Hbf
+187;Wien - Augsburg;omio;Vienna;Augsburg
+188;Augsburg - Salzburg;db;Augsburg Hbf;Salzburg Hbf
+188;Augsburg - Salzburg;oebb;Augsburg Hbf;Salzburg Hbf
+189;Salzburg - Augsburg;db;Salzburg Hbf;Augsburg Hbf
+189;Salzburg - Augsburg;oebb;Salzburg Hbf;Augsburg Hbf
+190;Augsburg - Zürich;db;Augsburg Hbf;Zürich HB
+190;Augsburg - Zürich;oebb;Augsburg Hbf;Zürich HB
+190;Augsburg - Zürich;sbb;Augsburg Hbf;Zürich HB
+191;Zürich - Augsburg;db;Zürich HB;Augsburg Hbf
+191;Zürich - Augsburg;oebb;Zürich HB;Augsburg Hbf
+191;Zürich - Augsburg;sbb;Zürich HB;Augsburg Hbf
+192;Augsburg - Paris;db;Augsburg Hbf;Paris Est
+192;Augsburg - Paris;oebb;Augsburg Hbf;Paris Est
+192;Augsburg - Paris;omio;Augsburg;Paris
+193;Paris - Augsburg;db;Paris Est;Augsburg Hbf
+193;Paris - Augsburg;oebb;Paris Est;Augsburg Hbf
+193;Paris - Augsburg;omio;Paris;Augsburg
+194;Augsburg - Budapest;db;Augsburg Hbf;Budapest-Keleti
+194;Augsburg - Budapest;oebb;Augsburg Hbf;Budapest-Keleti
+194;Augsburg - Budapest;mav;Augsburg Hbf;Budapest-Keleti
+195;Budapest - Augsburg;db;Budapest-Keleti;Augsburg Hbf
+195;Budapest - Augsburg;oebb;Budapest-Keleti;Augsburg Hbf
+195;Budapest - Augsburg;mav;Budapest-Keleti;Augsburg Hbf
+196;Augsburg - Verona;db;Augsburg Hbf;Verona Porta Nuova
+196;Augsburg - Verona;oebb;Augsburg Hbf;Verona Porta Nuova
+196;Augsburg - Verona;trenitalia;Augsburg Hbf;Verona Porta Nuova
+197;Verona - Augsburg;db;Verona Porta Nuova;Augsburg Hbf
+197;Verona - Augsburg;oebb;Verona Porta Nuova;Augsburg Hbf
+197;Verona - Augsburg;trenitalia;Verona Porta Nuova;Augsburg Hbf
+198;Augsburg - Venedig;db;Augsburg Hbf;Venezia Santa Lucia
+198;Augsburg - Venedig;oebb;Augsburg Hbf;Venezia Santa Lucia
+198;Augsburg - Venedig;trenitalia;Augsburg Hbf;Venezia S. Lucia
+199;Venedig - Augsburg;db;Venezia Santa Lucia;Augsburg Hbf
+199;Venedig - Augsburg;oebb;Venezia Santa Lucia;Augsburg Hbf
+199;Venedig - Augsburg;trenitalia;Venezia S. Lucia;Augsburg Hbf
+200;Augsburg - Prag;db;Augsburg Hbf;Praha hl.n.
+200;Augsburg - Prag;cd;Augsburg Hbf;Praha hl.n.
+201;Prag - Augsburg;db;Praha hl.n.;Augsburg Hbf
+201;Prag - Augsburg;cd;Praha hl.n.;Augsburg Hbf
+100;Berlin - Budapest;db;Berlin Hbf;Budapest-Keleti
+100;Berlin - Budapest;cd;Berlin Hbf;Budapest
+100;Berlin - Budapest;mav;Berlin Hbf;Budapest-Keleti
+101;Budapest - Berlin;db;Budapest-Keleti;Berlin Hbf
+101;Budapest - Berlin;cd;Budapest;Berlin Hbf
+101;Budapest - Berlin;mav;Budapest-Keleti;Berlin Hbf
+107;Frankfurt - Prag;db;Frankfurt(Main)Hbf;Praha hl.n.
+107;Frankfurt - Prag;cd;Frankfurt(Main)Hbf;Praha hl.n.
+108;Prag - Frankfurt;db;Praha hl.n.;Frankfurt(Main)Hbf
+108;Prag - Frankfurt;cd;Praha hl.n.;Frankfurt(Main)Hbf
+109;Hamburg - Prag;db;Hamburg Hbf;Praha hl.n.
+109;Hamburg - Prag;cd;Hamburg Hbf;Praha hl.n.
+110;Prag - Hamburg;db;Praha hl.n.;Hamburg Hbf
+110;Prag - Hamburg;cd;Praha hl.n.;Hamburg Hbf
+111;Dresden - Prag;db;Dresden Hbf;Praha hl.n.
+111;Dresden - Prag;cd;Dresden Hbf;Praha hl.n.
+112;Prag - Dresden;db;Praha hl.n.;Dresden Hbf
+112;Prag - Dresden;cd;Praha hl.n.;Dresden Hbf
+113;Nürnberg - Prag;db;Nürnberg Hbf;Praha hl.n.
+113;Nürnberg - Prag;cd;Nürnberg Hbf;Praha hl.n.
+114;Prag - Nürnberg;db;Praha hl.n.;Nürnberg Hbf
+114;Prag - Nürnberg;cd;Praha hl.n.;Nürnberg Hbf
+115;Frankfurt - Zürich;db;Frankfurt(Main)Hbf;Zürich HB
+115;Frankfurt - Zürich;sbb;Frankfurt (Main) Hbf;Zürich HB
+116;Zürich - Frankfurt;db;Zürich HB;Frankfurt(Main)Hbf
+116;Zürich - Frankfurt;sbb;Zürich HB;Frankfurt (Main) Hbf
+119;Zürich - Venedig;sbb;Zürich HB;Venezia Santa Lucia
+119;Zürich - Venedig;trenitalia;Zurigo;Venezia S. Lucia
+120;Venedig - Zürich;sbb;Venezia Santa Lucia;Zürich HB
+120;Venedig - Zürich;trenitalia;Venezia S. Lucia;Zurigo
+121;München - Venedig;db;München Hbf;Venezia Santa Lucia
+121;München - Venedig;trenitalia;Monaco Hbf;Venezia S. Lucia
+122;Venedig - München;db;Venezia Santa Lucia;München Hbf
+122;Venedig - München;trenitalia;Venezia S. Lucia;Monaco Hbf
+125;Köln - Amsterdam;db;Köln Hbf;Amsterdam Centraal
+125;Köln - Amsterdam;ns;Köln Hbf;Amsterdam Central
+125;Köln - Amsterdam;omio;Cologne;Amsterdam
+126;Amsterdam - Köln;db;Amsterdam Centraal;Köln Hbf
+126;Amsterdam - Köln;ns;Amsterdam Central;Köln Hbf
+126;Amsterdam - Köln;omio;Amsterdam;Cologne
+127;Paris - Amsterdam;eurostar;Paris Nord;Amsterdam Centraal
+127;Paris - Amsterdam;sncb;Paris Nord (Fr);Amsterdam CS (Nl)
+127;Paris - Amsterdam;omio;Paris;Amsterdam
+128;Amsterdam - Paris;eurostar;Amsterdam Centraal;Paris Nord
+128;Amsterdam - Paris;sncb;Amsterdam CS (Nl);Paris Nord (Fr)
+128;Amsterdam - Paris;omio;Amsterdam;Paris
+129;London - Amsterdam;eurostar;London St Pancras;Amsterdam Centraal
+129;London - Amsterdam;sncb;London St Pancras (Gb);Amsterdam CS (Nl)
+129;London - Amsterdam;omio;London;Amsterdam
+130;Amsterdam - London;eurostar;Amsterdam Centraal;London St Pancras
+130;Amsterdam - London;sncb;Amsterdam CS (Nl);London St Pancras (Gb)
+130;Amsterdam - London;omio;Amsterdam;London
+131;München - Amsterdam;db;München Hbf;Amsterdam Centraal
+131;München - Amsterdam;omio;Munich;Amsterdam
+132;Amsterdam - München;db;Amsterdam Centraal;München Hbf
+132;Amsterdam - München;ns;Amsterdam Central;München Hbf
+132;Amsterdam - München;omio;Amsterdam;Munich
+135;Krakau - Budapest;pkp;Kraków Główny;Budapest-Keleti
+135;Krakau - Budapest;mav;Kraków Główny;Budapest-Keleti
+136;Budapest - Krakau;pkp;Budapest-Keleti;Kraków Główny
+136;Budapest - Krakau;mav;Budapest-Keleti;Kraków Główny
+140;Lyon - Mailand;trenitalia;Lyon Part Dieu;Milano Centrale
+140;Lyon - Mailand;db;Lyon Part Dieu;Milano Centrale
+141;Bratislava - Prag;cd;Bratislava hl.st.;Praha hl.n.
+141;Bratislava - Prag;regiojet;Bratislava, Slovakia;Prague, Czech Republic
+141;Bratislava - Prag;omio;Bratislava;Prague
+142;Prag - Bratislava;cd;Praha hl.n.;Bratislava hl.st.
+142;Prag - Bratislava;regiojet;Prague, Czech Republic;Bratislava, Slovakia
+142;Prag - Bratislava;omio;Prague;Bratislava
+145;Mailand - Rom;trenitalia;Milano Centrale;Roma Termini
+145;Mailand - Rom;omio;Milan;Rome
+146;Rom - Mailand;trenitalia;Roma Termini;Milano Centrale
+146;Rom - Mailand;omio;Rome;Milan
+147;Amsterdam - Brüssel;eurostar;Amsterdam Centraal;Bruxelles-Midi
+147;Amsterdam - Brüssel;sncb;Amsterdam CS (Nl);Bruxelles-Midi (Be)
+148;Brüssel - Paris;eurostar;Bruxelles-Midi;Paris Nord
+148;Brüssel - Paris;sncb;Bruxelles-Midi (Be);Paris Nord (Fr)
+151;Budapest - Bukarest;mav;Budapest-Keleti;Bucuresti Nord
+151;Budapest - Bukarest;cfr;Budapest-Keleti;Bucuresti Nord
+168;Stuttgart - Paris;db;Stuttgart Hbf;Paris Est
+168;Stuttgart - Paris;omio;Stuttgart;Paris
+169;Paris - Stuttgart;db;Paris Est;Stuttgart Hbf
+169;Paris - Stuttgart;omio;Paris;Stuttgart
+170;München - Paris;db;München Hbf;Paris Est
+170;München - Paris;omio;Munich;Paris
+172;Stuttgart - Zürich;db;Stuttgart Hbf;Zürich HB
+172;Stuttgart - Zürich;sbb;Stuttgart Hbf;Zürich HB
+172;Stuttgart - Zürich;omio;Stuttgart;Zurich
+173;Zürich - Stuttgart;db;Zürich HB;Stuttgart Hbf
+173;Zürich - Stuttgart;sbb;Zürich HB;Stuttgart Hbf
+173;Zürich - Stuttgart;omio;Zurich;Stuttgart
+174;Düsseldorf - Amsterdam;db;Düsseldorf Hbf;Amsterdam Centraal
+174;Düsseldorf - Amsterdam;ns;Düsseldorf Hbf;Amsterdam Central
+174;Düsseldorf - Amsterdam;omio;Dusseldorf;Amsterdam
+175;Amsterdam - Düsseldorf;db;Amsterdam Centraal;Düsseldorf Hbf
+175;Amsterdam - Düsseldorf;ns;Amsterdam Central;Düsseldorf Hbf
+175;Amsterdam - Düsseldorf;omio;Amsterdam;Dusseldorf
+176;Düsseldorf - Brüssel;db;Düsseldorf Hbf;Bruxelles Midi
+176;Düsseldorf - Brüssel;omio;Dusseldorf;Brussels
+177;Brüssel - Düsseldorf;db;Bruxelles Midi;Düsseldorf Hbf
+177;Brüssel - Düsseldorf;omio;Brussels;Dusseldorf
+178;Hannover - Amsterdam;db;Hannover Hbf;Amsterdam Centraal
+178;Hannover - Amsterdam;ns;Hannover Hbf;Amsterdam Central
+178;Hannover - Amsterdam;omio;Hanover;Amsterdam
+179;Amsterdam - Hannover;db;Amsterdam Centraal;Hannover Hbf
+179;Amsterdam - Hannover;ns;Amsterdam Central;Hannover Hbf
+179;Amsterdam - Hannover;omio;Amsterdam;Hanover
+180;Köln - London;eurostar;Köln Hbf;London St Pancras
+180;Köln - London;sncb;Koln Hbf (De);London St Pancras (Gb)
+180;Köln - London;omio;Cologne;London
+181;London - Köln;eurostar;London St Pancras;Köln Hbf
+181;London - Köln;sncb;London St Pancras (Gb);Koln Hbf (De)
+181;London - Köln;omio;London;Cologne

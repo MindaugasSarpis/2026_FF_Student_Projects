@@ -1,0 +1,10 @@
+nr;strecke;seite;start;ziel
+101;Wien - Frankfurt;db;Wien Hbf;Frankfurt(Main)Hbf
+102;Wien - Nürnberg;db;Wien Hbf;Nürnberg Hbf
+103;Wien - Regensburg;db;Wien Hbf;Regensburg Hbf
+104;Wien - Plattling;db;Wien Hbf;Plattling
+105;Wien - Passau;db;Wien Hbf;Passau Hbf
+102;Wien - Nürnberg;oebb;Wien Hbf;Nürnberg Hbf
+103;Wien - Regensburg;oebb;Wien Hbf;Regensburg Hbf
+104;Wien - Plattling;oebb;Wien Hbf;Plattling
+105;Wien - Passau;oebb;Wien Hbf;Passau Hbf

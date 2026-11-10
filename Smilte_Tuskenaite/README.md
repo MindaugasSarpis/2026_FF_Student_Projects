@@ -1,38 +1,40 @@
-# Other Eyes: an atlas of creatures
+# Do smaller animals see "faster"?
 
-Interactive semester project: how animals see the world, where they live, and fun facts.
+Flicker fusion frequency (CFF) is the flicker rate at which a blinking light starts to look steady. A higher CFF means an animal can see faster changes. This project asks whether CFF changes with body mass across 34 vertebrate species, and whether light level matters.
 
-## Files
-- `index.html` page structure
-- `style.css` look and layout
-- `script.js` vision effects, map, fact cards
-- `data/species.json` all species info (add an entry to add a species)
-- `images/sample-scene.jpg` demo image (replace with your own photo you have rights to)
+## Data
 
-## Publish with GitHub Pages
-1. Upload all files (keep the `data` and `images` folders) to a public repo.
-2. Settings > Pages > Source: `main` branch, `/ (root)`, then Save.
-3. Your site appears at `https://USERNAME.github.io/REPO/` after a minute or two.
+- `data/raw/flicker_fusion_raw.csv`: one row per species, with CFF (Hz), body mass (g), light level (H = bright, L = low), how CFF was measured, and the original source for each number.
+- Source of the table: Healy, K., McNally, L., Ruxton, G. D., Cooper, N. & Jackson, A. L. (2013). Metabolic rate and body size are linked with perception of temporal information. *Animal Behaviour* 86(4), 685-696, Table 1.
+- The raw file is committed and is never edited by hand.
 
-## Run locally
-Run `python -m http.server` in this folder and open http://localhost:8000
-(opening index.html by double-click will not load the JSON data).
+## How to run
 
-## To do before submitting
-- [ ] Replace the placeholder range shapes with real IUCN range polygons
-- [ ] Verify every fact and status, and list your sources on the page
-- [ ] Swap in your own photo(s) for the vision demo
+You need Python 3 (tested with 3.14). From this folder (`Smilte_Tuskenaite`):
 
+```bash
+pip install -r requirements.txt
+python scripts/plot_cff_vs_mass.py
+python scripts/analyse_cff.py
+```
 
-## Data and sources
+The first script draws the plot. The second fits a straight line of CFF against log10(body mass) for each light level. Both write into `results/`. Paths are relative, so it works from any computer.
 
-Data folder layout:
-- `data/raw/`: data exactly as received, never edited by hand
-- `data/processed/`: cleaned data, written by scripts
-- `scripts/`: the Python code
+## Results
 
-**Research question:** Do smaller animals see "faster" than larger ones? (flicker fusion frequency compared with body mass)
+![CFF against body mass](results/cff_vs_mass.png)
 
-**Main dataset:** `data/raw/flicker_fusion_raw.csv`, 34 vertebrate species, typed from the paper below and checked against the PDF.
+Fit of CFF against log10(body mass), from `results/fit_summary.csv`:
 
-- Healy, K., McNally, L., Ruxton, G. D., Cooper, N. & Jackson, A. L. (2013). Metabolic rate and body size are linked with perception of temporal information. *Animal Behaviour* 86(4), 685–696. Table 1.
+| Light level | Species | Change in CFF per 10x body mass | Correlation r |
+|---|---|---|---|
+| All | 34 | -3.65 Hz | -0.18 |
+| Bright (H) | 19 | -9.31 Hz | -0.55 |
+| Low (L) | 15 | +0.53 Hz | +0.07 |
+
+In bright light, heavier animals tend to have a lower CFF. In low light there is no clear trend. Pooling all animals hides the trend, because light level separates the groups.
+
+Limits: the groups are small, species are related by evolution so they are not independent points, and metabolic rate (which the paper also uses) is not included here. This suggests a pattern. It does not prove one.
+
+## Use of AI assistance
+I used Claude, an AI assistant, to help find the source paper, to draft the scripts and to explain the Git steps. 

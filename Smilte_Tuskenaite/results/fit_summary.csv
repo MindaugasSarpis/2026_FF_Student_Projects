@@ -1,0 +1,4 @@
+light_level,n_species,slope_hz_per_10x_mass,intercept_hz,correlation_r
+all,34,-3.65,67.8,-0.18
+H,19,-9.31,103.9,-0.55
+L,15,0.53,32.4,0.07

@@ -1,7 +1,7 @@
 import numpy as np
 from pathlib import Path, PurePath
 import os
-import datetime as dtls
+import datetime as dt
 from PIL import Image, ExifTags
 import pandas as pd
 
@@ -11,9 +11,14 @@ def image_EXIF_data_loader(Data_dir):
         ["Digital", "Film", "Collage"]
         The formats supported are as following:
         [".jpg", "jpeg", ".tiff", ".tif", ".png"]"""
+    load_index = 0
     formats = tuple((".jpg", "jpeg", ".tiff", ".tif", ".png"))
     mediums = ["Digital", "Film", "Collage"]
-
+    if isinstance(Data_dir, str):
+        Data_dir = Path(Data_dir)
+    if not Data_dir.is_dir():
+        print(f"{str(Data_dir)} is a non-existing dir")
+        return pd.DataFrame()
     Picture_directories_data = {}
     for root, dirs, files in Path.walk(Data_dir): #walks trought everything in Data_dir
 
@@ -23,25 +28,34 @@ def image_EXIF_data_loader(Data_dir):
                 # Picture_directories_data[picture_dir] = "placeholder for meta data"
 
                 empty_dic = {}
-                picture = Image.open(picture_dir) #open the image sort of
-                exifdata = picture.getexif()
-                exif_ifd = exifdata.get_ifd(ExifTags.IFD.Exif)
-                for tagid in exifdata:
-                    tagname = ExifTags.TAGS.get(tagid, tagid)
-                    value = exifdata.get(tagid)
-                    empty_dic[f"{tagname}"] = f"{value}"
-                for tagid, value in exif_ifd.items():
-                    tagname = ExifTags.TAGS.get(tagid, tagid)
-                    empty_dic[f"{tagname}"] = f"{value}"
                 for medium in mediums:
                     if medium.lower() in (str(root)).lower():
                         empty_dic["Medium"] = medium
+                try:
+                    with Image.open(picture_dir)as picture:
+                        exifdata = picture.getexif()
+                    if exifdata:
+                        for tagid in exifdata:
+                            tagname = ExifTags.TAGS.get(tagid, tagid)
+                            value = exifdata.get(tagid)
+                            empty_dic[f"{tagname}"] = f"{value}"
+                    try:
+                        exif_ifd = exifdata.get_ifd(ExifTags.IFD.Exif)      
+                        for tagid, value in exif_ifd.items():
+                            tagname = ExifTags.TAGS.get(tagid, tagid)
+                            empty_dic[f"{tagname}"] = f"{value}"
+                    except (KeyError, AttributeError):
+                        pass
+                except Exception as e:
+                    print(f"Could not read metadata for {picture_dir.name}: {e}")
                 empty_dic["Directory"] = picture_dir
-                Picture_directories_data[picture_dir] = empty_dic
+                Picture_directories_data[load_index] = empty_dic
+                load_index = load_index + 1
             
 
     df = pd.DataFrame(Picture_directories_data).T
     return df
+
 
 # img_path_relative = Path(r"C:\Users\jkris\Desktop\University\Vilnius_University\Year_2\Sem_3\CERN Data Analysis\The_Project_Photo_Data_Exploration\Data\Raw\Test_Data\2024 09-10 Cinestill 800T\000018240018.jpg")
 # img_dic = {"test": "placeholder"}

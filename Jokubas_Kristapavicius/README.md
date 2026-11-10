@@ -11,6 +11,7 @@ Mediums in this specific report are digital photography, analog collage and
 analog photography (film).
 ---
 ## Methods
+### K-clustering
 
 ### Loading Data 
 

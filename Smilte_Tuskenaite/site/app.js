@@ -10,7 +10,10 @@ function showGrid() {
 
     const card = document.createElement("button");
     card.className = "card";
-    card.textContent = animal.common_name;
+        card.innerHTML = `
+      <img src="images/${animal.species_id}.jpg" alt="${animal.common_name}" onerror="this.remove()">
+      <span>${animal.common_name}</span>
+    `;
     card.onclick = () => selectAnimal(card, animal);
     grid.appendChild(card);
   }

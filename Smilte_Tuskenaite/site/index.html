@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flicker Fusion Atlas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>How fast can animals see?</h1>
+    <p>Pick an animal to see how quickly a flickering light must blink before it looks steady to that animal.</p>
+  </header>
+
+  <main>
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="H">Bright light</button>
+      <button class="filter" data-filter="L">Low light</button>
+    </div>
+
+    <div id="grid"></div>
+
+    <section id="detail">
+      <p>Choose an animal above.</p>
+    </section>
+  </main>
+
+  <footer>
+    Data: Healy et al. (2013), Animal Behaviour 86, 685-696, Table 1.
+  </footer>
+
+  <script src="species_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

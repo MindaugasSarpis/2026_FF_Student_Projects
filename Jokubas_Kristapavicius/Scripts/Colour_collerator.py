@@ -5,10 +5,10 @@ from scipy.spatial.distance import cdist, pdist
 
 
 
-data = pd.read_pickle("./Data/Processed/processed_image_data.pkl")
+# data = pd.read_pickle("./Data/Processed/processed_image_data.pkl")
 # print(data["Dominant_Colour_CIELAB"].head())
-C_1_test = data["Dominant_Colour_CIELAB"].iloc[15] #
-C_2_test = data["Dominant_Colour_CIELAB"].iloc[20] #
+# C_1_test = data["Dominant_Colour_CIELAB"].iloc[15] #
+# C_2_test = data["Dominant_Colour_CIELAB"].iloc[20] #
 """Color distance:
     colour distance in CIELAB space between two images"""
 def Delta_Colour(colour_1,colour_2, Perceptual = True):
@@ -41,7 +41,7 @@ def Delta_Colour(colour_1,colour_2, Perceptual = True):
         None
     return avg_Delta_C
 
-Delta_Colour(C_1_test,C_1_test)
+# Delta_Colour(C_1_test,C_1_test)
 
 
 dom_col_test = data["Dominant_Colour_CIELAB"].iloc[15] #

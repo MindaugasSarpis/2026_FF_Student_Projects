@@ -8,7 +8,7 @@ from pathlib import Path
 import skimage
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.manifold import TSNE
-raw_data_dir = Path(r"./Data/Raw/Test_Data")
+raw_data_dir = Path(r"./Data/Raw")
 # raw_data_dir = Path(r".\Data\Raw\Film")
 ###IMPORT THE DATA
 start_import = time.perf_counter() 

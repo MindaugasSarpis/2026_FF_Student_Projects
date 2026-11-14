@@ -16,11 +16,10 @@ dom_col_test = data["Dominant_Colour_CIELAB"].iloc[15] #
 def Pallete_Variance(dom_cols):
     """dom_cols - np.array of dominant colours in the list
                 in CIELAB format row - different colour
-                cols LAB vector components"""
-    # print(dom_cols)
-    # dom_cols = np.array()
-    # dom_cols = pd.DataFrame()
-    # dom_cols.to_numpy()
+                cols LAB vector components extracted from dataframe with title 'Dominant_Colour_CIELAB'
+        Function takes three (or more) dominant colours of the picture and return all possible variances
+        between the colours for example: 3 dom. colours are stored in vector form [r_1,r_2,r_3], then the output
+         is [distance(r_1,r_2), distance(r_1,r_3),distance(r_2,r_3)] """
     number_rows = np.shape(dom_cols)[0]
     Delta_R = np.zeros(shape=(number_rows,number_rows))
     for row in range(number_rows):
@@ -30,8 +29,9 @@ def Pallete_Variance(dom_cols):
         # print(delta_r)
         
         delta_r = np.sqrt(np.sum(delta_r, axis = 1))
-        print(delta_r.T)
-        # Delta_R[]
-        
-    # print(r_1_array)
+        Delta_R[row,:] = delta_r.T
+    
+    mask = np.fromfunction(lambda i,j: i>j, shape=np.shape(Delta_R))
+    Pallete_Variance_values = Delta_R[mask]
+    print(mask,'\n',Pallete_Variance_values)
 Pallete_Variance(dom_col_test)

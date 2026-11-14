@@ -11,36 +11,37 @@ C_1_test = data["Dominant_Colour_CIELAB"].iloc[15] #
 C_2_test = data["Dominant_Colour_CIELAB"].iloc[20] #
 """Color distance:
     colour distance in CIELAB space between two images"""
-def Delta_Colour_Perceptual(colour_1,colour_2):
+def Delta_Colour(colour_1,colour_2, Perceptual = True):
     """Colour_1(2)- np.array of 3 or more dom colours in the picture
     The function takes colour_x as a vector filled with colour vectors that are in 
     the basiss of CIELAB, finds all possible distances between the dom colours, calculates their distances
     and then the average of those distances is the output of the function
     
     UPDATE use already built in scipy functions :(((("""
-
-    dist_matrix = cdist(colour_1,colour_2, metric='euclidean') 
-    row_ind, col_ind = linear_sum_assignment(dist_matrix)
-    avg_Delta_C = dist_matrix[row_ind,col_ind].mean()
-    # number_rows = np.shape(colour_1)[0]
-    # Delta_C = np.zeros(shape=(number_rows,number_rows))
-    # for row in range(number_rows):
-        # c_row_array = np.full_like(colour_1, fill_value=colour_1[row])
-        # print(f"c2 = {colour_2}\n c_row = {c_row_array}")
-        # delta_c = c_row_array - colour_2
-        # print(delta_c)
-        # delta_c = delta_c**2
-        # print(delta_c)
-        # delta_c = np.sqrt(np.sum(delta_c, axis = 1))
-        # print(delta_c)
-        # Delta_C[row] = delta_c
-    # avg_Delta_C = np.mean(Delta_C)
-    # print(Delta_C)
-    # print(avg_Delta_C)
-    print(avg_Delta_C)
+    if Perceptual:
+        dist_matrix = cdist(colour_1,colour_2, metric='euclidean') 
+        row_ind, col_ind = linear_sum_assignment(dist_matrix)
+        avg_Delta_C = dist_matrix[row_ind,col_ind].mean()
+        # number_rows = np.shape(colour_1)[0]
+        # Delta_C = np.zeros(shape=(number_rows,number_rows))
+        # for row in range(number_rows):
+            # c_row_array = np.full_like(colour_1, fill_value=colour_1[row])
+            # print(f"c2 = {colour_2}\n c_row = {c_row_array}")
+            # delta_c = c_row_array - colour_2
+            # print(delta_c)
+            # delta_c = delta_c**2
+            # print(delta_c)
+            # delta_c = np.sqrt(np.sum(delta_c, axis = 1))
+            # print(delta_c)
+            # Delta_C[row] = delta_c
+        # avg_Delta_C = np.mean(Delta_C)
+        # print(Delta_C)
+        # print(avg_Delta_C)
+    else:
+        None
     return avg_Delta_C
 
-Delta_Colour_Perceptual(C_1_test,C_1_test)
+Delta_Colour(C_1_test,C_1_test)
 
 
 dom_col_test = data["Dominant_Colour_CIELAB"].iloc[15] #

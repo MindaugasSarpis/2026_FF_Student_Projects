@@ -5,4 +5,4 @@ data = data[data.index.notna()].dropna(subset=["Dominant_Colour_CIELAB"])
 data["Inter_Variance"] = data['Dominant_Colour_CIELAB'].map(
     lambda colours : Pallete_Variance(colours)
 )
-print(data["Medium"].unique)
+print(data["Medium"].unique())

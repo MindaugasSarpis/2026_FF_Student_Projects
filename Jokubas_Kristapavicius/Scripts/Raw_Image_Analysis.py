@@ -1,13 +1,10 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 import time
 from Loader import image_EXIF_data_loader
 from Dominant_Colour import dominant_colour_finder
 import numpy as np
 from pathlib import Path
 import skimage
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.manifold import TSNE
 raw_data_dir = Path(r"./Data/Raw")
 # raw_data_dir = Path(r".\Data\Raw\Film")
 ###IMPORT THE DATA

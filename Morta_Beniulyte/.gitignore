@@ -3,3 +3,6 @@
 
 # Made by scripts/rebuild.sh
 data/processed/
+
+#
+scripts/__pychache__/

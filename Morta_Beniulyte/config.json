@@ -1,3 +1,5 @@
 {
-    "Control_sample": "K"
+    "cntrl_sample": "K",
+    "housekeeping_gene": "TBP"
+
 }

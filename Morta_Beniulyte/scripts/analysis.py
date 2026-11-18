@@ -9,14 +9,12 @@ with open("../config.json") as file:
 
 mean_table_minus_hk_gene = pcr.make_mean_minus_hk_table(mean_table, parameters["housekeeping_gene"])
        
-results_table = pcr.make_results_table(mean_table_minus_hk_gene, parameters["cntrl_sample"])
+deldel_Ct_table = pcr.make_deldel_Ct_table(mean_table_minus_hk_gene, parameters["cntrl_sample"])
 
-pprint(results_table)
-###########################
-##########################
-############################
-############################
-##############################
+relative_table = pcr.make_results_relative_uni_table(deldel_Ct_table)
+
+pprint(relative_table)
+
 
         
         

@@ -1,0 +1,8 @@
+{
+    "Experiment1" : {
+        "replicate1" : "../data/raw/Example_Data_I.csv",
+        "replicate2" : "",
+        "repliacate3" : ""
+
+    }
+}

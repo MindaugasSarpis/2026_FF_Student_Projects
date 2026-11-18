@@ -1,4 +1,5 @@
 from decimal import Decimal
+from constant import CONFIG
 
 def make_mean_table(file_name):
 
@@ -23,6 +24,7 @@ def make_mean_table(file_name):
             mean_table[sample_name] = {}
 
         if gene_name not in mean_table[sample_name]:
+            if gene_name == 
             mean_table[sample_name][gene_name] = mean
 
     return mean_table

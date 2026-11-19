@@ -1,0 +1,6 @@
+CONFIG = {
+    "CNTRL_SAMPLE": "K",
+    "HOUSEKEEPING_GENE": "TBP",
+    "NEGATIVE_CNTRL" : "neg"
+
+}

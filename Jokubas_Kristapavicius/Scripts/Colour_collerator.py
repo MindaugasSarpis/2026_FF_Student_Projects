@@ -45,8 +45,7 @@ def Delta_Colour(colour_1,colour_2, Perceptual = True):
 
 
 # dom_col_test = data["Dominant_Colour_CIELAB"].iloc[15] #
-"""Pallete variance:
-    image wise how spread is the pallete"""
+
 def Pallete_Variance(dom_cols):
     """dom_cols - np.array of dominant colours in the list
                 in CIELAB format row - different colour

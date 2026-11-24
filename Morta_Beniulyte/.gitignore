@@ -1,0 +1,8 @@
+# Made by the operating system
+.*
+
+# Made by scripts/rebuild.sh
+data/processed/
+
+#
+scripts/__pycache__/

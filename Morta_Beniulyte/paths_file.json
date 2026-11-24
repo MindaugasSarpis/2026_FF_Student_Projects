@@ -1,0 +1,8 @@
+{
+    "Experiment1" : {
+        "replicate1" : ["../data/raw/Example_I_I.csv", "../data/raw/Example_I_II.csv"],
+        "replicate2" : ["../data/raw/Example_II.csv"],
+        "repliacate3" : ["./data/raw/Example_III.csv"]
+
+    }
+}

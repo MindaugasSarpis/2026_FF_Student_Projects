@@ -1,0 +1,11 @@
+This should be the final Cern project. I will record the idea here and during the excecution I will record all the things that I decided to change and hopefully everything will make sense and be organised enough
+
+This project should have a gamified educational character connected to real astronomical data and theory. The goal of the code will be to take a real astronomical object from a reliable astronomical archive , identify the object and classify it into our the rarity system and give us a card. The rarity system includes the classes rare, epic, mythic , cosmic based on their complexity, rarity in real life and other parameters that will be thought. Then after obtaining the card, there will be some data analysis about the object, information , visualisation maps and hopefully evolution simulations and other fun stuff that will be thought of in the future. Point is to make a connection between Snakemake, Python, Websites and AI. Once you summon a card you have to pass 1 quiz about a previous card that you obtained and solve an exercise from the exercise library that will be based on some books. The second part of the project will be about particles and their connection to cosmic events and cern detection methods. I am not yet sure what exactly taht will be but it will be fun
+
+
+Check list
+1) Make a new folder for this project  Y
+2) Create folders and name them accordingly Y
+3) Build a database 
+
+A database is an organised system for storing,finding, relating and updating all the gather information that we will get. We will use SQLLite database engine that stores a database in a local file. 

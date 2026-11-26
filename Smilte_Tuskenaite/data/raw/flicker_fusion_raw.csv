@@ -1,0 +1,35 @@
+species_id,latin_name,flicker_fusion_hz,body_mass_g,light_level,measurement_type,methodology,cff_source,mass_source
+ambystoma-tigrinum,Ambystoma tigrinum,30,10.78,L,electroretinogram,suboptimum,Crevier & Meister 1998,Makarieva et al. 2008
+anguilla-anguilla,Anguilla anguilla,14,71.1,L,behavioural,suboptimum,Adrian & Matthews 1926,Makarieva et al. 2008
+anolis-cristatellus,Anolis cristatellus,70,6.0,H,electroretinogram,optimum,Fleishman et al. 1995,Rogowitz 1996
+asio-flammeus,Asio flammeus,70,406.0,H,electroretinogram,optimum,Bornshein & Tansley 1961,Graber 1962
+bubo-virginianus,Bubo virginianus,45,1450.0,L,electroretinogram,suboptimum,Ault & House 1987,Ganey et al. 1993
+canis-lupus-familiaris,Canis lupus familiaris,80,13900.0,H,behavioural,suboptimum,Coile et al. 1989,Kendall et al. 1982
+carassius-auratus,Carassius auratus,67.2,10.8,H,electroretinogram,optimum,Hanyu & Ali 1963,Hughes 1977
+carcharhinus-acronotus,Carcharhinus acronotus,18,14491.0,L,electroretinogram,optimum,McComb et al. 2010,McComb et al. 2010
+caretta-caretta,Caretta caretta,40,135000.0,H,electroretinogram,suboptimum,Levenson et al. 2004,Duermit 2007
+cavia-porcellus,Cavia porcellus,50,629.0,L,electroretinogram,suboptimum,Tansley et al. 1961,Arends & McNab 2001
+chelonia-mydas,Chelonia mydas,40,128000.0,H,electroretinogram,suboptimum,Levenson et al. 2004,Jackson & Prange 1979
+columba-livia,Columba livia,100,315.0,H,electroretinogram,suboptimum,Bornshein & Tansley 1961,Terres 1980
+dermochelys-coriacea,Dermochelys coriacea,15,354000.0,H,electroretinogram,suboptimum,Eckert et al. 2006,Georges & Fossette 2006
+felis-catus,Felis catus,55,3054.4,L,electroretinogram,suboptimum,Loop & Berkeley 1975,Kendall et al. 1982
+gallus-gallus-domesticus,Gallus gallus domesticus,87,2710.0,H,behavioural,optimum,Lisney et al. 2011,Winchester 1940
+gekko-gecko,Gekko gecko,20,54.8,L,electroretinogram,suboptimum,Meneghini & Hamasaki 1967,Hurlburt 1996
+homo-sapiens,Homo sapiens,60,67100.0,H,behavioural,optimum,Brundrett 1974,Holloway 1980
+iguana-iguana,Iguana iguana,80,750.0,H,electroretinogram,suboptimum,Meneghini & Hamasaki 1967,Howland et al. 2004
+macaca-mulatta,Macaca mulatta,95,7710.0,H,behavioural,optimum,Shumake et al. 1968,Schwartz & Kemnitz 1992
+melopsittacus-undulatus,Melopsittacus undulatus,74.7,33.6,H,behavioural,suboptimum,Ginsburg & Nilsson 1971,Makarieva et al. 2008
+negaprion-brevirostris,Negaprion brevirostris,37,92987.0,L,electroretinogram,suboptimum,Gruber 1969,Allyn 1947
+oncorhynchus-mykiss,Oncorhynchus mykiss,27,4000.0,L,behavioural,suboptimum,Carvalho et al. 2004,Ridolfi 2006
+oryzias-latipes,Oryzias latipes,37.2,0.21,L,electroretinogram,suboptimum,Carvalho et al. 2002,Carvalho et al. 2002
+pagophilus-groenlandicus,Pagophilus groenlandicus,32.7,119600.0,L,behavioural,suboptimum,Loop & Berkeley 1975,Stewart & Lavigne 1984
+raja-erinacea,Raja erinacea,30,500.0,L,electroretinogram,optimum,Green & Siegel 1975,Hove & Moss 1997
+rattus-norvegicus,Rattus norvegicus,39,237.0,L,electroretinogram,optimum,Williams et al. 1985,Hart 1971
+spermophilus-lateralis,Spermophilus lateralis,120,215.5,H,electroretinogram,optimum,Tansley et al. 1961,McKeever 1964
+sphenodon-punctatus,Sphenodon punctatus,45.6,353.75,L,behavioural,suboptimum,Woo et al. 2009,Herrel et al. 2010
+sphyrna-lewini,Sphyrna lewini,27.3,1893.0,L,electroretinogram,optimum,McComb et al. 2010,McComb et al. 2010; Letourneur et al. 1998
+sturnus-vulgaris,Sturnus vulgaris,100,75.0,H,electroretinogram,suboptimum,Greenwood et al. 2004,Makarieva et al. 2008
+tamias-amoenus,Tamias amoenus,100,51.91,H,electroretinogram,optimum,Tansley et al. 1961,Sheppard 1968
+tamiasciurus-hudsonicus,Tamiasciurus hudsonicus,60,215,H,electroretinogram,optimum,Tansley et al. 1961,Arends & McNab 2001
+thunnus-albacares,Thunnus albacares,80,45349.0,H,electroretinogram,suboptimum,Southwood et al. 2008,Collette & Nauen 1983; Duarte-Neto & Lessa 2004
+tupaia-glis,Tupaia glis,90,142.0,H,behavioural,optimum,Callahan & Petry 1999,Bradley & Hudson 2003

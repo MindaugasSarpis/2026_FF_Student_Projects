@@ -1,0 +1,13 @@
+nr;strecke;seite;start;ziel
+60;Warschau - Vilnius;ltg;Warszawa Centralna;Vilnius
+60;Warschau - Vilnius;pkp;Warszawa Centralna;Vilnius
+62;Mailand - Zürich;sbb;Milano Centrale;Zürich HB
+62;Mailand - Zürich;trenitalia;Milano Centrale;Zurigo
+63;Mailand - Frankfurt;db;Milano Centrale;Frankfurt(Main)Hbf
+63;Mailand - Frankfurt;sbb;Milano Centrale;Frankfurt (Main) Hbf
+66;Wien - Prag;cd;Wien Hbf;Praha hl.n.
+66;Wien - Prag;oebb;Wien Hbf;Praha hl.n.
+66;Wien - Prag;omio;Vienna;Prague
+67;München - Prag;cd;München Hbf;Praha hl.n.
+67;München - Prag;db;München Hbf;Praha hl.n.
+68;München - Berlin;cd;München Hbf;Berlin Hbf

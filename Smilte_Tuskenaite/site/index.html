@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flicker Fusion Atlas</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>How fast can animals see?</h1>
+    <p>Pick an animal to see how quickly a flickering light must blink before it looks steady to that animal.</p>
+  </header>
+
+  <main>
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="H">Bright light</button>
+      <button class="filter" data-filter="L">Low light</button>
+    </div>
+
+    <div id="grid"></div>
+
+    <section id="detail">
+      <p>Choose an animal above.</p>
+    </section>
+  </main>
+
+  <footer>
+        <section id="results" class="reveal">
+    <h2>What the data shows</h2>
+    <p>Each dot is one of the 34 species. Orange dots live in bright light, blue dots in dim light.</p>
+            <div id="group-buttons">
+      <button data-group="all">All species</button>
+      <button data-group="H">Bright light</button>
+      <button data-group="L">Dim light</button>
+    </div>
+
+    <div id="plot-layout">
+      <div id="plot-box">
+        <svg id="plot" viewBox="0 0 640 400" role="img" aria-label="Flicker fusion frequency against body mass for 34 vertebrate species"></svg>
+        <div id="plot-tooltip" hidden></div>
+      </div>
+      <div id="group-box">
+        <p>Choose a group above to see its trend line and what it means.</p>
+      </div>
+    </div>
+    <p class="results-note">Among bright-light animals, bigger bodies tend to go with slower flicker fusion. Among dim-light animals there is no clear trend. This is a pattern in 34 species, not proof of a cause.</p>
+  </section>   
+    <section id="vision">
+    <h2>How do they see it?</h2>
+    <p>Pick an animal, then drag the slider from the human view to theirs.</p>
+
+    <div id="vision-picker">
+      <button data-id="canis-lupus-familiaris"><img src="images/canis-lupus-familiaris.jpg" alt=""><span>Dog</span></button>
+      <button data-id="felis-catus"><img src="images/felis-catus.jpg" alt=""><span>Cat</span></button>
+      <button data-id="gallus-gallus-domesticus"><img src="images/gallus-gallus-domesticus.jpg" alt=""><span>Chicken</span></button>
+      <button data-id="macaca-mulatta"><img src="images/macaca-mulatta.jpg" alt=""><span>Macaque</span></button>
+      <button data-id="pagophilus-groenlandicus"><img src="images/pagophilus-groenlandicus.jpg" alt=""><span>Harp seal</span></button>
+      <button data-id="gekko-gecko"><img src="images/gekko-gecko.jpg" alt=""><span>Gecko</span></button>
+      <button data-id="spermophilus-lateralis"><img src="images/spermophilus-lateralis.jpg" alt=""><span>Squirrel</span></button>
+      <button data-id="columba-livia"><img src="images/columba-livia.jpg" alt=""><span>Pigeon</span></button>
+    </div>
+
+    <div id="vision-box">
+      <img id="vision-human" src="vision/scene.jpg" alt="Human view of a meadow">
+      <img id="vision-animal" src="vision/canis-lupus-familiaris.jpg" alt="Animal view of the meadow">
+    </div>
+
+    <div id="vision-controls">
+      <span>Human</span>
+      <input type="range" id="vision-slider" min="0" max="100" value="0">
+      <span id="vision-animal-name">Dog</span>
+    </div>
+    <p id="vision-caption"></p>
+  </section>
+    Data: Healy et al. (2013), Animal Behaviour 86, 685-696, Table 1.
+  </footer>
+
+  <script src="species_data.js"></script>
+    <script src="fit_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

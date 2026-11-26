@@ -1,0 +1,9 @@
+species_id,colour_model,acuity_cpd,source
+canis-lupus-familiaris,dichromat,12,Neitz et al. 1989 (colour); range 5.5-19.5 cpd (acuity)
+felis-catus,dichromat,8,Daw & Pearlman 1969 and related work (colour); Caves et al. 2018 (acuity)
+gallus-gallus-domesticus,tetrachromat,7,Bowmaker & Knowles 1977 (colour); Jarvis et al. 2009 (acuity)
+macaca-mulatta,trichromat,23.7,Bowmaker et al. 1991 (colour); Ver Hoeve et al. 1999 (acuity)
+pagophilus-groenlandicus,monochromat,5.6,Peichl et al. 2001 (colour); harbour seal acuity from Hanke & Dehnhardt (acuity)
+gekko-gecko,trichromat,2,Blow 2004 (colour); wall lizard value from Kawamoto et al. (acuity stand-in)
+spermophilus-lateralis,dichromat,4,Jacobs and colleagues (colour and acuity)
+columba-livia,tetrachromat,12.8,Bowmaker et al. (colour); pigeon frontal acuity study 2005 (acuity)

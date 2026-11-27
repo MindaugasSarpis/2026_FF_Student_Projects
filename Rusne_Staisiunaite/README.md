@@ -6,15 +6,16 @@ The program analyses real astronomical data and tests possible explanations for 
 
 ## Data
 
-The dataset comes from the NASA Exoplanet Archive (DOI: 10.26133/NEA12).
+The project uses a reduced snapshot saved as `data/planetary_systems.csv`.
 
-### How to get the data:
+**Source:** [NASA Exoplanet Archive — Planetary Systems table](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS)
 
-1. Visit the NASA Exoplanet Archive (**URL:** https://exoplanetarchive.ipac.caltech.edu/);
+DOI: [10.26133/NEA12](https://doi.org/10.26133/NEA12)
 
-2. Once on the homepage, navigate to **Data** and then **Planetary Systems (PS)** (**URL:** https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS);
+**Retrieved:** 2026-11-22
 
-3. There you can **Select Columns** you want to download (optional), and finally **Download Table** (choose **CSV Format** for this project).
+**Filter:** `default_flag = 1` (one row per planet)
 
+**Columns used:** `pl_name`, `hostname`, `pl_orbsmax`, `pl_rade`, `pl_bmasse`, `pl_insol`, `st_teff`, `sy_dist`, `st_rad`, `pl_orbeccen`
 
 

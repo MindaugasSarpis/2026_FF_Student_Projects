@@ -1,0 +1,435 @@
+:root {
+  --bg: #0f1f1a;
+  --panel: #18322a;
+  --card: #1f4036;
+  --text: #eef5ef;
+  --muted: #9fb8ab;
+  --accent: #f2b441;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
+h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+header p { color: var(--muted); margin-top: 0; }
+
+.filters { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+
+.filter {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--card);
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+.filter.active { background: var(--accent); color: #1b1b1b; border-color: var(--accent); }
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.6rem;
+}
+
+.card {
+  background: var(--card);
+  color: var(--text);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.7rem 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 3.6rem;
+}
+.card img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.card:hover { border-color: var(--muted); }
+.card.selected { border-color: var(--accent); }
+
+#detail {
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-top: 1.25rem;
+}
+#detail h2 { margin: 0; }
+.latin { font-style: italic; color: var(--muted); margin-top: 0; }
+
+footer { color: var(--muted); font-size: 0.85rem; }
+
+.detail-photo {
+  width: 100%;
+  max-width: 260px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+}
+
+.blink-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.8rem 0;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: blink linear infinite;
+}
+
+@keyframes blink {
+  0%, 49%   { opacity: 1; }
+  50%, 100% { opacity: 0.1; }
+}
+
+.blink-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* ---------- "How do they see it?" section ---------- */
+#vision {
+  max-width: 720px;
+  margin: 2.5rem auto;
+  text-align: center;
+}
+
+/* Row of small animal picture buttons */
+#vision-picker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+#vision-picker button {
+  width: 80px;
+  padding: 5px;
+  background: var(--card);
+  color: var(--text);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+#vision-picker button img {
+  width: 100%;
+  height: 52px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+#vision-picker button.picked {
+  border-color: var(--accent);
+}
+
+/* The meadow picture: both images sit on top of each other */
+#vision-box {
+  position: relative;
+  max-width: 600px;
+  aspect-ratio: 3 / 2;
+  margin: 1rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#vision-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* The animal's view starts invisible; the slider will make it appear */
+#vision-animal {
+  opacity: 0;
+}
+
+/* Slider row under the picture */
+#vision-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#vision-slider {
+  flex: 1;
+  accent-color: var(--accent);
+}
+
+#vision-caption {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- "What the data shows" section ---------- */
+#results {
+  max-width: 720px;
+  margin: 2.5rem auto;
+  text-align: center;
+}
+
+#results img {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+  margin: 1rem 0;
+}
+
+.results-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* ---------- Scroll reveal animation ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- Interactive plot ---------- */
+#plot-box {
+  position: relative;
+  max-width: 640px;
+  margin: 1rem auto;
+}
+
+#plot {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.plot-grid {
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 1;
+}
+
+.plot-label {
+  fill: var(--muted);
+  font-size: 12px;
+}
+
+.plot-title {
+  fill: var(--text);
+  font-size: 13px;
+}
+
+/* Dots start invisible, then pop in one by one when the section is revealed */
+.plot-dot {
+  opacity: 0;
+  cursor: pointer;
+  stroke: var(--bg);
+  stroke-width: 1.5;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.dot-H { fill: #f2994a; }   /* bright light: orange */
+.dot-L { fill: #5aa9e6; }   /* dim light: blue */
+
+#results.visible .plot-dot {
+  animation: dot-pop 0.5s ease-out both;
+}
+
+@keyframes dot-pop {
+  from { opacity: 0; transform: scale(0); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.plot-dot:hover,
+.plot-dot:focus {
+  stroke: var(--text);
+  stroke-width: 3;
+  outline: none;
+}
+
+/* The label that follows the mouse (filled in by JavaScript later) */
+#plot-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  text-align: left;
+  z-index: 10;
+}
+
+/* ---------- Result cards ---------- */
+#result-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+
+.result-card {
+  flex: 1 1 170px;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 0.9rem;
+  font-size: 0.9rem;
+}
+
+.result-card h3 {
+  margin: 0 0 0.3rem;
+}
+
+.result-big {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--accent);
+  margin: 0.2rem 0;
+}
+
+.result-small {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* ---------- Group buttons, box and layout ---------- */
+#results {
+  max-width: 980px;   /* wider, so the plot and the box fit side by side */
+}
+
+#group-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+#group-buttons button {
+  background: var(--card);
+  color: var(--text);
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+
+#group-buttons button:hover {
+  border-color: var(--accent);
+}
+
+/* The chosen button takes the colour of its group */
+#group-buttons button.active {
+  color: var(--bg);
+  font-weight: bold;
+}
+#group-buttons button[data-group="all"].active { background: var(--accent); }
+#group-buttons button[data-group="H"].active   { background: #f2994a; }
+#group-buttons button[data-group="L"].active   { background: #5aa9e6; }
+
+/* Plot on the left, explanation box on the right (stacks on narrow screens) */
+#plot-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+#plot-layout #plot-box {
+  flex: 1 1 420px;
+  margin: 0;
+}
+
+#group-box {
+  flex: 1 1 220px;
+  max-width: 280px;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+/* Dots outside the chosen group fade out smoothly */
+.plot-dot {
+  transition: opacity 0.4s;
+}
+
+.plot-dot.faded {
+  opacity: 0.15 !important;
+}
+
+/* Trend lines */
+.trend-line {
+  stroke-width: 3;
+  stroke-linecap: round;
+  fill: none;
+  pointer-events: none;
+}
+.trend-all { stroke: var(--accent); }
+.trend-H   { stroke: #ffb36b; }
+.trend-L   { stroke: #8cc8f5; }
+
+/* ---------- Fonts ---------- */
+body {
+  font-family: "Fraunces", Georgia, serif;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", Georgia, serif;
+  letter-spacing: 0.01em;
+}
+
+/* Buttons do not copy the page font by themselves, so tell them to */
+button {
+  font-family: inherit;
+}

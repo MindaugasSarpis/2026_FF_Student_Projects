@@ -1,0 +1,49 @@
+nr;strecke;seite;start;ziel
+152;Berlin - Hamburg;db;Berlin Hbf;Hamburg Hbf
+152;Berlin - Hamburg;oebb;Berlin Hbf;Hamburg Hbf
+152;Berlin - Hamburg;omio;Berlin;Hamburg
+153;Hamburg - Berlin;db;Hamburg Hbf;Berlin Hbf
+153;Hamburg - Berlin;oebb;Hamburg Hbf;Berlin Hbf
+153;Hamburg - Berlin;omio;Hamburg;Berlin
+154;Berlin - Frankfurt;db;Berlin Hbf;Frankfurt(Main)Hbf
+154;Berlin - Frankfurt;oebb;Berlin Hbf;Frankfurt(Main)Hbf
+154;Berlin - Frankfurt;omio;Berlin;Frankfurt
+155;Frankfurt - Berlin;db;Frankfurt(Main)Hbf;Berlin Hbf
+155;Frankfurt - Berlin;oebb;Frankfurt(Main)Hbf;Berlin Hbf
+155;Frankfurt - Berlin;omio;Frankfurt;Berlin
+156;Hamburg - München;db;Hamburg Hbf;München Hbf
+156;Hamburg - München;oebb;Hamburg Hbf;München Hbf
+156;Hamburg - München;omio;Hamburg;Munich
+157;München - Hamburg;db;München Hbf;Hamburg Hbf
+157;München - Hamburg;oebb;München Hbf;Hamburg Hbf
+157;München - Hamburg;omio;Munich;Hamburg
+158;Berlin - Köln;db;Berlin Hbf;Köln Hbf
+158;Berlin - Köln;oebb;Berlin Hbf;Köln Hbf
+158;Berlin - Köln;omio;Berlin;Cologne
+159;Köln - Berlin;db;Köln Hbf;Berlin Hbf
+159;Köln - Berlin;oebb;Köln Hbf;Berlin Hbf
+159;Köln - Berlin;omio;Cologne;Berlin
+160;Frankfurt - München;db;Frankfurt(Main)Hbf;München Hbf
+160;Frankfurt - München;oebb;Frankfurt(Main)Hbf;München Hbf
+160;Frankfurt - München;omio;Frankfurt;Munich
+161;München - Frankfurt;db;München Hbf;Frankfurt(Main)Hbf
+161;München - Frankfurt;oebb;München Hbf;Frankfurt(Main)Hbf
+161;München - Frankfurt;omio;Munich;Frankfurt
+162;Stuttgart - Berlin;db;Stuttgart Hbf;Berlin Hbf
+162;Stuttgart - Berlin;oebb;Stuttgart Hbf;Berlin Hbf
+162;Stuttgart - Berlin;omio;Stuttgart;Berlin
+163;Berlin - Stuttgart;db;Berlin Hbf;Stuttgart Hbf
+163;Berlin - Stuttgart;oebb;Berlin Hbf;Stuttgart Hbf
+163;Berlin - Stuttgart;omio;Berlin;Stuttgart
+164;Leipzig - München;db;Leipzig Hbf;München Hbf
+164;Leipzig - München;oebb;Leipzig Hbf;München Hbf
+164;Leipzig - München;omio;Leipzig;Munich
+165;München - Leipzig;db;München Hbf;Leipzig Hbf
+165;München - Leipzig;oebb;München Hbf;Leipzig Hbf
+165;München - Leipzig;omio;Munich;Leipzig
+166;Hamburg - Köln;db;Hamburg Hbf;Köln Hbf
+166;Hamburg - Köln;oebb;Hamburg Hbf;Köln Hbf
+166;Hamburg - Köln;omio;Hamburg;Cologne
+167;Köln - Hamburg;db;Köln Hbf;Hamburg Hbf
+167;Köln - Hamburg;oebb;Köln Hbf;Hamburg Hbf
+167;Köln - Hamburg;omio;Cologne;Hamburg

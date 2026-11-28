@@ -4,6 +4,7 @@ import os
 import datetime as dt
 from PIL import Image, ExifTags
 import pandas as pd
+from tqdm import tqdm
 
 def image_EXIF_data_loader(Data_dir):
     """Data_dir - directory for all the files that will be analysed
@@ -12,17 +13,18 @@ def image_EXIF_data_loader(Data_dir):
         The formats supported are as following:
         [".jpg", "jpeg", ".tiff", ".tif", ".png"]"""
     load_index = 0
-    formats = tuple((".jpg", "jpeg", ".tiff", ".tif", ".png"))
+    formats = tuple((".jpg", "jpeg", ".tiff", ".tif", ".png",))
     mediums = ["Digital", "Film", "Collage"]
+    
     if isinstance(Data_dir, str):
         Data_dir = Path(Data_dir)
     if not Data_dir.is_dir():
         print(f"{str(Data_dir)} is a non-existing dir")
         return pd.DataFrame()
     Picture_directories_data = {}
-    for root, dirs, files in Path.walk(Data_dir): #walks trought everything in Data_dir
+    for root, dirs, files in Path.walk(Data_dir, follow_symlinks=True): #walks trought everything in Data_dir
 
-        for file in files:
+        for file in tqdm(files):
             if file.lower().endswith(formats):
                 picture_dir = Path(root).joinpath(file)
                 # Picture_directories_data[picture_dir] = "placeholder for meta data"
@@ -31,23 +33,24 @@ def image_EXIF_data_loader(Data_dir):
                 for medium in mediums:
                     if medium.lower() in (str(root)).lower():
                         empty_dic["Medium"] = medium
+                    
                 try:
-                    with Image.open(picture_dir)as picture:
+                    with Image.open(picture_dir) as picture:
                         exifdata = picture.getexif()
-                    if exifdata:
-                        for tagid in exifdata:
-                            tagname = ExifTags.TAGS.get(tagid, tagid)
-                            value = exifdata.get(tagid)
-                            empty_dic[f"{tagname}"] = f"{value}"
-                    try:
-                        exif_ifd = exifdata.get_ifd(ExifTags.IFD.Exif)      
-                        for tagid, value in exif_ifd.items():
-                            tagname = ExifTags.TAGS.get(tagid, tagid)
-                            empty_dic[f"{tagname}"] = f"{value}"
-                    except (KeyError, AttributeError):
-                        pass
+                        if exifdata:
+                            for tagid in exifdata:
+                                tagname = ExifTags.TAGS.get(tagid, tagid)
+                                value = exifdata.get(tagid)
+                                empty_dic[f"{tagname}"] = f"{value}"
+                        try:
+                            exif_ifd = exifdata.get_ifd(ExifTags.IFD.Exif)
+                            for tagid, value in exif_ifd.items():
+                                tagname = ExifTags.TAGS.get(tagid, tagid)
+                                empty_dic[f"{tagname}"] = f"{value}"
+                        except (KeyError, AttributeError):
+                            pass
                 except Exception as e:
-                    print(f"Could not read metadata for {picture_dir.name}: {e}")
+                    print(f"Could not read metadata for {picture_dir.name}")
                 empty_dic["Directory"] = picture_dir
                 Picture_directories_data[load_index] = empty_dic
                 load_index = load_index + 1
